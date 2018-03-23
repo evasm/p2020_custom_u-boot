@@ -1,0 +1,2839 @@
+
+u-boot:     file format elf32-powerpc
+
+SYMBOL TABLE:
+eff40000 l    d  .text	00000000 .text
+eff9a15c l    d  .rodata	00000000 .rodata
+effabf00 l    d  .reloc	00000000 .reloc
+effb00e8 l    d  .data	00000000 .data
+effb5fe0 l    d  .u_boot_list	00000000 .u_boot_list
+effff000 l    d  .bootpg	00000000 .bootpg
+effffffc l    d  .resetvec	00000000 .resetvec
+f0000000 l    d  .bss	00000000 .bss
+00000000 l    d  .PPC.EMB.apuinfo	00000000 .PPC.EMB.apuinfo
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .gnu.attributes	00000000 .gnu.attributes
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    df *ABS*	00000000 arch/powerpc/cpu/mpc85xx/start.o
+eff400b0 l       .text	00000000 CriticalInput
+eff40160 l       .text	00000000 MachineCheck
+eff40210 l       .text	00000000 DataStorage
+eff402c0 l       .text	00000000 InstStorage
+eff40370 l       .text	00000000 ExtInterrupt
+eff4041c l       .text	00000000 Alignment
+eff404dc l       .text	00000000 ProgramCheck
+eff40590 l       .text	00000000 FPUnavailable
+eff40640 l       .text	00000000 SystemCall
+eff406f0 l       .text	00000000 Decrementer
+eff407a0 l       .text	00000000 IntervalTimer
+eff40850 l       .text	00000000 WatchdogTimer
+eff40900 l       .text	00000000 DataTLBError
+eff409b0 l       .text	00000000 InstructionTLBError
+eff40a60 l       .text	00000000 DebugBreakpoint
+effff118 l       .bootpg	00000000 nexti
+effff220 l       .bootpg	00000000 create_ccsr_new_tlb
+effff27c l       .bootpg	00000000 create_ccsr_old_tlb
+effff2c8 l       .bootpg	00000000 verify_old_ccsr
+effff2dc l       .bootpg	00000000 infinite_debug_loop
+effff2e0 l       .bootpg	00000000 write_new_ccsrbar
+effff308 l       .bootpg	00000000 delete_temp_tlbs
+effff3d0 l       .bootpg	00000000 create_init_ram_area
+effff48c l       .bootpg	00000000 switch_as
+eff40c6c l       .text	00000000 int_return
+eff4100c l       .text	00000000 clear_bss
+00000000 l    df *ABS*	00000000 cpu.c
+effb00e8 l       .data	00000000 .LANCHOR1
+effb00e8 l     O .data	0000078c cpu_type_list
+effb0874 l       .data	00000000 .LANCHOR0
+effb0874 l     O .data	0000001c cpu_type_unknown
+00000000 l    df *ABS*	00000000 fdt.c
+effb0890 l       .data	00000000 .LANCHOR0
+effb0890 l     O .data	00000044 phy_interface_strings
+00000000 l    df *ABS*	00000000 fsl_lbc.c
+eff4156c l     F .text	00000004 __lbc_sdram_init
+00000000 l    df *ABS*	00000000 law.c
+00000000 l    df *ABS*	00000000 arch/powerpc/cpu/mpc85xx/release.o
+eff42164 l       .text	00000000 __secondary_start_code_end
+eff42ffc l       .text	00000000 __secondary_reset_vector
+eff43184 l       .text	00000000 __spin_table_end
+00000000 l    df *ABS*	00000000 fdt.c
+eff9a1e8 l       .rodata	00000000 .LANCHOR0
+eff9a1e8 l     O .rodata	00000011 __func__.7923
+00000000 l    df *ABS*	00000000 mp.c
+00000000 l    df *ABS*	00000000 pci.c
+00000000 l    df *ABS*	00000000 p2020_serdes.c
+f00000dc l       .bss	00000000 .LANCHOR0
+f00000dc l     O .bss	00000004 serdes1_prtcl_map
+eff9c309 l       .rodata	00000000 .LANCHOR1
+eff9c309 l     O .rodata	00000040 serdes1_cfg_tbl
+00000000 l    df *ABS*	00000000 cpu.c
+eff45374 l     F .text	00000004 __board_reset
+00000000 l    df *ABS*	00000000 cpu_init.c
+00000000 l    df *ABS*	00000000 cpu_init_early.c
+00000000 l    df *ABS*	00000000 interrupts.c
+00000000 l    df *ABS*	00000000 speed.c
+00000000 l    df *ABS*	00000000 tlb.c
+eff9a1e0 l       .rodata	00000000 .LANCHOR0
+eff9a1e0 l     O .rodata	00000008 __func__.7705
+00000000 l    df *ABS*	00000000 traps.c
+eff4630c l     F .text	000000bc print_backtrace
+00000000 l    df *ABS*	00000000 reloc.S
+00000000 l    df *ABS*	00000000 bootm.c
+eff46ba8 l     F .text	00000098 boot_bd_t_linux
+00000000 l    df *ABS*	00000000 cache.c
+00000000 l    df *ABS*	00000000 extable.c
+00000000 l    df *ABS*	00000000 interrupts.c
+f00000e0 l       .bss	00000000 .LANCHOR1
+f00000e0 l     O .bss	00000004 timestamp
+f00000e4 l       .bss	00000000 .LANCHOR0
+f00000e4 l     O .bss	00000004 decrementer_count
+00000000 l    df *ABS*	00000000 stack.c
+00000000 l    df *ABS*	00000000 time.c
+00000000 l    df *ABS*	00000000 p1_p2_rdb_pc.c
+00000000 l    df *ABS*	00000000 ddr.c
+00000000 l    df *ABS*	00000000 law.c
+00000000 l    df *ABS*	00000000 tlb.c
+00000000 l    df *ABS*	00000000 boot.c
+eff4763c l     F .text	00000084 do_go
+00000000 l    df *ABS*	00000000 bootm.c
+eff477fc l     F .text	00000110 do_imls
+eff4790c l     F .text	0000011c image_info
+eff47a28 l     F .text	0000008c do_iminfo
+effb0b2c l     O .data	000004cf bootm_help_text
+effb0a54 l       .data	00000000 .LANCHOR0
+effb0a54 l     O .data	000000d8 cmd_bootm_sub
+00000000 l    df *ABS*	00000000 help.c
+eff47b38 l     F .text	0000005c do_help
+effb6028 l       .u_boot_list	00000000 .LANCHOR1
+effb6028 l     O .u_boot_list	00000000 start.7450
+effb6028 l     O .u_boot_list	00000000 start.7446
+effb6778 l       .u_boot_list	00000000 .LANCHOR0
+effb6778 l     O .u_boot_list	00000000 end.7453
+00000000 l    df *ABS*	00000000 version.c
+eff47b94 l     F .text	00000050 do_version
+00000000 l    df *ABS*	00000000 blk_common.c
+00000000 l    df *ABS*	00000000 source.c
+eff480b0 l     F .text	00000094 do_source
+effb0ffc l     O .data	000000ac source_help_text
+00000000 l    df *ABS*	00000000 bdinfo.c
+eff48144 l     F .text	00000038 print_num
+eff4817c l     F .text	0000006c print_eth
+00000000 l    df *ABS*	00000000 console.c
+eff48320 l     F .text	000000c4 do_coninfo
+00000000 l    df *ABS*	00000000 date.c
+eff483e4 l     F .text	00000048 cnvrt2
+eff48624 l     F .text	0000014c do_date
+effb10a8 l       .data	00000000 .LANCHOR1
+effb10a8 l     O .data	0000001c weekdays
+effb10c4 l       .data	00000000 .LANCHOR0
+effb10c4 l     O .data	00000024 default_tm
+00000000 l    df *ABS*	00000000 echo.c
+eff48770 l     F .text	000000d0 do_echo
+00000000 l    df *ABS*	00000000 eeprom.c
+eff48840 l     F .text	00000048 parse_numeric_param
+eff48888 l     F .text	00000098 parse_i2c_bus_addr
+00000000 l    df *ABS*	00000000 elf.c
+eff48c54 l     F .text	000000ac load_elf_image_shdr
+00000000 l    df *ABS*	00000000 exit.c
+eff49208 l     F .text	00000050 do_exit
+00000000 l    df *ABS*	00000000 ext2.c
+eff49288 l     F .text	00000030 do_ext2ls
+00000000 l    df *ABS*	00000000 fat.c
+eff49318 l     F .text	00000030 do_fat_ls
+eff49348 l     F .text	000000a8 do_fat_fsinfo
+00000000 l    df *ABS*	00000000 fdt.c
+eff493f0 l     F .text	000000bc fdt_valid
+eff494ac l     F .text	000000bc is_printable_string
+eff49568 l     F .text	00000174 print_data
+eff49718 l     F .text	00000e64 do_fdt
+f00000e8 l       .bss	00000000 .LANCHOR0
+f00000e8 l     O .bss	00000400 data.7508
+effb1110 l     O .data	00000649 fdt_help_text
+effb10e8 l       .data	00000000 .LANCHOR2
+effb10e8 l     O .data	00000021 tabs.7620
+effb110c l       .data	00000000 .LANCHOR1
+effb110c l     O .data	00000002 root.7535
+eff9b008 l       .rodata	00000000 .L147
+00000000 l    df *ABS*	00000000 flash.c
+eff4a57c l     F .text	00000164 flash_fill_sect_ranges
+eff4a6e0 l     F .text	0000015c abbrev_spec
+eff4a83c l     F .text	00000074 do_flinfo
+eff4a96c l     F .text	000000e0 addr_spec
+eff4aaf8 l     F .text	00000228 do_flerase
+eff4adfc l     F .text	0000033c do_protect
+00000000 l    df *ABS*	00000000 i2c.c
+eff4b138 l     F .text	00000084 do_i2c
+eff4b1bc l     F .text	0000008c do_i2c_bus_speed
+eff4b248 l     F .text	0000004c do_i2c_reset
+eff4b294 l     F .text	00000104 do_i2c_probe
+eff4b398 l     F .text	000000c0 do_i2c_bus_num
+eff4b458 l     F .text	000000f4 do_i2c_show_bus
+eff4b54c l     F .text	00000040 get_alen.constprop.5
+eff4b58c l     F .text	00000130 do_i2c_crc
+eff4b6bc l     F .text	00000204 mod_i2c_mem.isra.3
+eff4b8c0 l     F .text	00000008 do_i2c_nm
+eff4b8c8 l     F .text	00000008 do_i2c_mm
+eff4b8d0 l     F .text	000001dc do_i2c_md
+eff4baac l     F .text	000000dc do_i2c_read
+eff4bb88 l     F .text	00000114 do_i2c_mw
+eff4bc9c l     F .text	00000154 do_i2c_write
+eff4bdf0 l     F .text	00000108 do_i2c_loop
+effb175c l     O .data	0000037c i2c_help_text
+f00004e8 l       .bss	00000000 .LANCHOR4
+f00004e8 l     O .bss	00000004 i2c_mm_last_addr
+f00004ec l       .bss	00000000 .LANCHOR3
+f00004ec l     O .bss	00000004 i2c_mm_last_chip
+effb1ad8 l       .data	00000000 .LANCHOR6
+effb1ad8 l     O .data	00000004 i2c_dp_last_length
+f00004f0 l       .bss	00000000 .LANCHOR7
+f00004f0 l     O .bss	00000004 i2c_dp_last_chip
+f00004f4 l       .bss	00000000 .LANCHOR5
+f00004f4 l     O .bss	00000004 i2c_mm_last_alen
+f00004f8 l       .bss	00000000 .LANCHOR8
+f00004f8 l     O .bss	00000004 i2c_dp_last_addr
+effb67f8 l       .u_boot_list	00000000 .LANCHOR2
+effb67f8 l     O .u_boot_list	00000000 start.9356
+effb67f8 l     O .u_boot_list	00000000 start.9328
+effb67f8 l     O .u_boot_list	00000000 start.9340
+effb1adc l       .data	00000000 .LANCHOR0
+effb1adc l     O .data	00000138 cmd_i2c_sub
+effb6850 l       .u_boot_list	00000000 .LANCHOR1
+effb6850 l     O .u_boot_list	00000000 end.9359
+effb6850 l     O .u_boot_list	00000000 end.9331
+effb6850 l     O .u_boot_list	00000000 end.9343
+f00004fc l       .bss	00000000 .LANCHOR9
+f00004fc l     O .bss	00000004 i2c_dp_last_alen
+00000000 l    df *ABS*	00000000 irq.c
+eff4befc l     F .text	0000005c do_interrupts
+00000000 l    df *ABS*	00000000 itest.c
+eff4bf58 l     F .text	000000d4 evalexp
+eff4c02c l     F .text	00000094 evalstr
+eff4c0c0 l     F .text	000001c4 binary_test
+eff4c284 l     F .text	0000009c do_itest
+effb1c14 l       .data	00000000 .LANCHOR0
+effb1c14 l     O .data	00000068 op_table
+eff9a3e4 l       .rodata	00000000 .L34
+eff9a3fc l       .rodata	00000000 .L41
+00000000 l    df *ABS*	00000000 load.c
+eff4c320 l     F .text	0000004c bin_data_init
+eff4c36c l     F .text	00000064 k_data_save
+eff4c3d0 l     F .text	00000064 k_data_restore
+eff4c434 l     F .text	00000044 getcxmodem
+eff4c478 l     F .text	0000011c load_serial_ymodem
+eff4c594 l     F .text	00000050 bin_data_char
+eff4c5e4 l     F .text	00000054 chk1.constprop.1
+eff4c638 l     F .text	00000068 s1_sendpacket.constprop.2
+eff4c6a0 l     F .text	00000214 load_serial
+eff4c8b4 l     F .text	000001a4 do_load_serial
+eff4ca58 l     F .text	0000073c do_load_serial_bin
+f0000500 l       .bss	00000000 .LANCHOR16
+f0000500 l     O .bss	00000014 send_parms
+f0000514 l       .bss	00000000 .LANCHOR6
+f0000514 l     O .bss	00000004 os_data_addr_saved
+f0000518 l       .bss	00000000 .LANCHOR9
+f0000518 l     O .bss	00000001 his_pad_char
+f000051c l       .bss	00000000 .LANCHOR7
+f000051c l     O .bss	00000018 a_b
+f0000534 l       .bss	00000000 .LANCHOR12
+f0000534 l     O .bss	00000004 os_data_char
+f0000538 l       .bss	00000000 .LANCHOR0
+f0000538 l     O .bss	00000004 os_data_state
+f000053c l       .bss	00000000 .LANCHOR4
+f000053c l     O .bss	00000004 k_data_escape
+f0000540 l       .bss	00000000 .LANCHOR5
+f0000540 l     O .bss	00000004 os_data_state_saved
+f0000544 l       .bss	00000000 .LANCHOR1
+f0000544 l     O .bss	00000004 os_data_addr
+f0000548 l       .bss	00000000 .LANCHOR15
+f0000548 l     O .bss	00000004 send_ptr
+f000054c l       .bss	00000000 .LANCHOR8
+f000054c l     O .bss	00000004 his_pad_count
+f0000550 l       .bss	00000000 .LANCHOR2
+f0000550 l     O .bss	00000004 bin_start_address
+f0000554 l       .bss	00000000 .LANCHOR14
+f0000554 l     O .bss	00000001 his_quote
+effb1c7c l       .data	00000000 .LANCHOR10
+effb1c7c l     O .data	00000004 do_echo
+f0000558 l       .bss	00000000 .LANCHOR11
+f0000558 l     O .bss	00000004 os_data_init
+f000055c l       .bss	00000000 .LANCHOR13
+f000055c l     O .bss	00000001 his_eol
+f0000560 l       .bss	00000000 .LANCHOR3
+f0000560 l     O .bss	00000004 k_data_escape_saved
+00000000 l    df *ABS*	00000000 mem.c
+eff4d194 l     F .text	000000f0 do_mem_mw
+eff4d284 l     F .text	00000110 do_mem_loop
+eff4d394 l     F .text	000000f4 do_mem_md
+eff4d488 l     F .text	00000170 do_mem_cmp
+eff4d5f8 l     F .text	0000005c do_mem_base
+eff4d654 l     F .text	00000110 do_mem_cp
+eff4d764 l     F .text	0000005c do_mem_crc
+eff4d7c0 l     F .text	000001a4 mod_mem.isra.0
+eff4d964 l     F .text	00000008 do_mem_mm
+eff4d96c l     F .text	00000008 do_mem_nm
+effb1c80 l       .data	00000000 .LANCHOR1
+effb1c80 l     O .data	00000004 dp_last_length
+f0000564 l       .bss	00000000 .LANCHOR2
+f0000564 l     O .bss	00000004 dp_last_addr
+f0000568 l       .bss	00000000 .LANCHOR0
+f0000568 l     O .bss	00000004 base_address
+f000056c l       .bss	00000000 .LANCHOR5
+f000056c l     O .bss	00000004 mm_last_size
+f0000570 l       .bss	00000000 .LANCHOR4
+f0000570 l     O .bss	00000004 mm_last_addr
+f0000574 l       .bss	00000000 .LANCHOR3
+f0000574 l     O .bss	00000004 dp_last_size
+00000000 l    df *ABS*	00000000 mii.c
+eff4d974 l     F .text	00000074 extract_range
+eff4da90 l     F .text	00000880 do_mii
+f0000578 l       .bss	00000000 .LANCHOR5
+f0000578 l     O .bss	00000004 last_data
+effb1c84 l     O .data	00000078 reg_0_desc_tbl
+f0000580 l       .bss	00000000 .LANCHOR4
+f0000580 l     O .bss	00000004 last_reg_hi
+effb1cfc l     O .data	00000090 reg_5_desc_tbl
+effb1d8c l     O .data	00000090 reg_4_desc_tbl
+f0000588 l       .bss	00000000 .LANCHOR6
+f0000588 l     O .bss	00000004 last_mask
+f000058c l       .bss	00000000 .LANCHOR1
+f000058c l     O .bss	00000004 last_addr_lo
+effb1e1c l     O .data	000000c0 reg_1_desc_tbl
+f0000594 l       .bss	00000000 .LANCHOR0
+f0000594 l     O .bss	00000002 last_op
+f000059c l       .bss	00000000 .LANCHOR2
+f000059c l     O .bss	00000004 last_addr_hi
+effb1edc l     O .data	0000000c reg_2_desc_tbl
+effb1ee8 l     O .data	00000024 reg_3_desc_tbl
+effb1f0c l       .data	00000000 .LANCHOR8
+effb1f0c l     O .data	00000030 reg_0_5_desc_tbl
+f00005a4 l       .bss	00000000 .LANCHOR3
+f00005a4 l     O .bss	00000004 last_reg_lo
+effb1f3c l       .data	00000000 .LANCHOR7
+effb1f3c l     O .data	00000030 desc_and_len_tbl
+00000000 l    df *ABS*	00000000 mdio.c
+eff4d9e8 l     F .text	000000a8 extract_range
+eff4e310 l     F .text	000004b0 do_mdio
+f0000584 l       .bss	00000000 .LANCHOR5
+f0000584 l     O .bss	00000004 last_reg_hi
+f000057c l       .bss	00000000 .LANCHOR6
+f000057c l     O .bss	00000004 last_data
+f00005ac l       .bss	00000000 .LANCHOR3
+f00005ac l     O .bss	00000004 last_devad_hi
+f00005a8 l       .bss	00000000 .LANCHOR4
+f00005a8 l     O .bss	00000004 last_reg_lo
+f0000590 l       .bss	00000000 .LANCHOR0
+f0000590 l     O .bss	00000004 last_addr_lo
+f0000598 l       .bss	00000000 .LANCHOR7
+f0000598 l     O .bss	00000002 last_op
+f00005a0 l       .bss	00000000 .LANCHOR1
+f00005a0 l     O .bss	00000004 last_addr_hi
+f00005b0 l       .bss	00000000 .LANCHOR2
+f00005b0 l     O .bss	00000004 last_devad_lo
+00000000 l    df *ABS*	00000000 misc.c
+eff4e7c0 l     F .text	000000ec do_sleep
+00000000 l    df *ABS*	00000000 mmc.c
+eff4e8ac l     F .text	000000d4 do_mmcops
+eff4e980 l     F .text	0000007c init_mmc_device
+eff4e9fc l     F .text	00000040 do_mmc_rescan
+eff4ea3c l     F .text	000004f8 do_mmc_hwpartition
+eff4ef34 l     F .text	00000034 do_mmc_list
+eff4ef68 l     F .text	00000140 do_mmc_dev
+eff4f0a8 l     F .text	000000fc do_mmc_read
+eff4f1a4 l     F .text	00000080 do_mmc_part
+eff4f224 l     F .text	000000fc do_mmc_erase
+eff4f320 l     F .text	00000114 do_mmc_write
+eff4f434 l     F .text	0000038c do_mmcinfo
+eff4f7c0 l     F .text	000000b0 do_mmc_setdsr
+effb1f6c l       .data	00000000 .LANCHOR0
+effb1f6c l     O .data	000000f0 cmd_mmc
+effb205c l       .data	00000000 .LANCHOR1
+effb205c l     O .data	00000004 curr_device
+00000000 l    df *ABS*	00000000 mp.c
+eff4f870 l     F .text	00000168 cpu_cmd
+effb2060 l     O .data	000002cb cpu_help_text
+00000000 l    df *ABS*	00000000 mtdparts.c
+eff4f9d8 l     F .text	00000058 part_delall
+eff4fa30 l     F .text	000000b0 memsize_parse
+eff4fae0 l     F .text	000000a0 mtd_part_info
+eff4fb80 l     F .text	00000068 env_get_mtdparts
+eff4fbe8 l     F .text	00000090 memsize_format
+eff4fc78 l     F .text	000000cc index_partitions
+eff4fd44 l     F .text	000000b0 current_save
+eff4fdf4 l     F .text	0000016c part_sort_add
+eff4ff60 l     F .text	0000009c device_del
+eff4fffc l     F .text	000002c0 generate_mtdparts_save.constprop.7
+eff502bc l     F .text	00000084 device_delall.constprop.9
+eff50340 l     F .text	00000050 mtd_devices_init
+eff50390 l     F .text	00000090 get_mtd_info.constprop.10
+eff50420 l     F .text	00000340 part_validate
+eff507cc l     F .text	000004bc device_parse
+eff515b8 l     F .text	000000d0 do_chpart
+eff51688 l     F .text	000005c8 do_mtdparts
+f00005b4 l       .bss	00000000 .LANCHOR5
+f00005b4 l     O .bss	00000081 last_ids
+effb232c l     O .data	000004d3 mtdparts_help_text
+f0000638 l       .bss	00000000 .LANCHOR1
+f0000638 l     O .bss	00000011 last_partition
+f000064c l       .bss	00000000 .LANCHOR2
+f000064c l     O .bss	00000201 last_parts
+f0000850 l       .bss	00000000 .LANCHOR4
+f0000850 l     O .bss	00000004 initialized.9429
+f0000854 l       .bss	00000000 .LANCHOR3
+f0000854 l     O .bss	00000008 mtdids
+f000085c l       .bss	00000000 .LANCHOR0
+f000085c l     O .bss	00000008 devices
+00000000 l    df *ABS*	00000000 nand.c
+eff51c50 l     F .text	00000074 set_dev
+eff51cc4 l     F .text	000000d8 nand_print_and_set_info
+eff51d9c l     F .text	00000c1c do_nand
+eff529b8 l     F .text	00000208 nand_load_image
+eff52bc0 l     F .text	00000240 do_nandboot
+effb2800 l     O .data	000003ee nand_help_text
+eff9a250 l       .rodata	00000000 .LANCHOR1
+eff9a250 l     O .rodata	0000000b __func__.9211
+f0000868 l       .bss	00000000 .LANCHOR0
+f0000868 l     O .bss	00000008 last.9180
+00000000 l    df *ABS*	00000000 net.c
+eff52e00 l     F .text	000002a0 netboot_common
+eff530a0 l     F .text	0000000c do_bootp
+eff530ac l     F .text	0000000c do_nfs
+eff53118 l     F .text	00000090 do_ping
+00000000 l    df *ABS*	00000000 pci.c
+eff531a8 l     F .text	00000060 pci_cfg_write
+eff53208 l     F .text	0000005c pci_read_config
+eff53264 l     F .text	000000a4 pci_show_regs
+eff53308 l     F .text	00000134 pci_cfg_modify.isra.1
+eff53738 l     F .text	000003dc do_pci
+effb2bf0 l       .data	00000000 .LANCHOR3
+effb2bf0 l     O .data	000000fc regs_bridge
+effb2cec l       .data	00000000 .LANCHOR0
+effb2cec l     O .data	00000048 regs_start
+effb2d34 l     O .data	000001cb pci_help_text
+effb2f00 l       .data	00000000 .LANCHOR1
+effb2f00 l     O .data	00000060 regs_rest
+effb2f60 l       .data	00000000 .LANCHOR4
+effb2f60 l     O .data	0000012c regs_cardbus
+effb308c l       .data	00000000 .LANCHOR2
+effb308c l     O .data	000000a8 regs_normal
+00000000 l    df *ABS*	00000000 pcmcia.c
+00000000 l    df *ABS*	00000000 reginfo.c
+eff53b14 l     F .text	00000030 do_reginfo
+00000000 l    df *ABS*	00000000 sata.c
+eff53ba0 l     F .text	00000104 do_sata
+effb3134 l       .data	00000000 .LANCHOR0
+effb3134 l     O .data	00000004 sata_curr_device
+00000000 l    df *ABS*	00000000 sf.c
+eff53ca4 l     F .text	00000064 bytes_per_second
+eff53d08 l     F .text	00000814 do_spi_flash
+f0000870 l       .bss	00000000 .LANCHOR0
+f0000870 l     O .bss	00000004 flash
+00000000 l    df *ABS*	00000000 setexpr.c
+eff5451c l     F .text	00000100 substitute
+eff5461c l     F .text	0000007c get_arg
+eff54698 l     F .text	00000304 regex_sub
+eff5499c l     F .text	000001ac do_setexpr
+00000000 l    df *ABS*	00000000 test.c
+eff54b48 l     F .text	00000008 do_false
+eff54b50 l     F .text	00000008 do_true
+eff54b58 l     F .text	00000330 do_test
+eff9b02c l       .rodata	00000000 .L12
+00000000 l    df *ABS*	00000000 usb.c
+eff54e88 l     F .text	000000a4 usb_get_class_desc
+eff54f2c l     F .text	0000005c usb_find_device
+eff54f88 l     F .text	00000244 usb_show_tree_graph
+eff551cc l     F .text	00000148 usb_display_class_sub
+eff55314 l     F .text	00000130 usb_display_desc
+eff55444 l     F .text	00000058 usb_display_string
+eff5549c l     F .text	00000208 usb_display_config
+eff556a4 l     F .text	00000030 do_usbboot
+eff556d4 l     F .text	0000004c do_usb_start
+eff55794 l     F .text	000003dc do_usb
+effb3238 l       .data	00000000 .LANCHOR0
+effb3238 l     O .data	00000004 usb_stor_curr_dev
+eff9b6d8 l       .rodata	00000000 .L89
+00000000 l    df *ABS*	00000000 disk.c
+00000000 l    df *ABS*	00000000 ximg.c
+eff55dfc l     F .text	00000378 do_imgextract
+effb323c l     O .data	000000b2 imgextract_help_text
+00000000 l    df *ABS*	00000000 nvedit.c
+eff56174 l     F .text	000000b4 do_env_delete
+eff56228 l     F .text	0000007c do_env_exists
+eff562a4 l     F .text	00000034 do_env_save
+eff562d8 l     F .text	00000084 do_env
+eff5635c l     F .text	000000e0 env_print
+eff5643c l     F .text	000000dc do_env_print
+eff56518 l     F .text	0000024c do_env_import
+eff56764 l     F .text	000000a4 do_env_default
+eff56808 l     F .text	000001d4 _do_env_set.isra.0
+eff569dc l     F .text	00000020 do_env_set
+eff56b38 l     F .text	00000214 do_env_export
+eff57014 l     F .text	000000c8 do_env_edit.part.2
+eff570dc l     F .text	00000028 do_env_edit
+effb32f0 l     O .data	0000024f env_help_text
+effb3540 l       .data	00000000 .LANCHOR0
+effb3540 l     O .data	00000004 env_id
+effb3544 l       .data	00000000 .LANCHOR1
+effb3544 l     O .data	000000f0 cmd_env_sub
+00000000 l    df *ABS*	00000000 board_init.c
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 exports.c
+eff5714c l     F .text	00000044 mdelay
+eff57190 l     F .text	00000004 dummy
+00000000 l    df *ABS*	00000000 hash.c
+eff5734c l     F .text	00000044 hash_finish_crc32
+eff57390 l     F .text	00000044 hash_update_crc32
+eff573d4 l     F .text	00000034 hash_init_crc32
+eff57408 l     F .text	00000058 hash_finish_sha256
+eff57460 l     F .text	0000003c hash_update_sha256
+eff5749c l     F .text	00000044 hash_init_sha256
+eff574e0 l     F .text	00000058 hash_finish_sha1
+eff57538 l     F .text	0000003c hash_update_sha1
+eff57574 l     F .text	00000044 hash_init_sha1
+effb3634 l       .data	00000000 .LANCHOR0
+effb3634 l     O .data	00000054 hash_algo
+00000000 l    df *ABS*	00000000 cli_hush.c
+eff57804 l     F .text	00000020 b_reset
+eff57824 l     F .text	00000020 static_get
+eff57844 l     F .text	0000000c file_peek
+eff57850 l     F .text	00000048 mapset
+eff57898 l     F .text	00000030 syntax_err
+eff578c8 l     F .text	000000e4 free_pipe_list
+eff579ac l     F .text	00000040 xmalloc
+eff579ec l     F .text	0000003c new_pipe
+eff57a28 l     F .text	00000040 xrealloc
+eff57a68 l     F .text	00000098 done_command
+eff57b00 l     F .text	00000058 done_pipe
+eff57b58 l     F .text	00000350 done_word
+eff57ea8 l     F .text	00000118 do_showvar
+eff57fc0 l     F .text	0000007c is_assignment
+eff5803c l     F .text	000001dc file_get
+eff58218 l     F .text	00000094 b_addchr
+eff582ac l     F .text	00000078 b_addqchr
+eff58324 l     F .text	0000000c static_peek
+eff585ac l     F .text	000002d8 insert_var_value_sub
+eff5910c l     F .text	00000714 parse_stream_outer
+eff58984 l     F .text	00000788 run_list_real
+f0000874 l       .bss	00000000 .LANCHOR3
+f0000874 l     O .bss	00000004 flag_repeat
+f0000878 l       .bss	00000000 .LANCHOR6
+f0000878 l     O .bss	00000028 buf.7985
+f00008a0 l       .bss	00000000 .LANCHOR8
+f00008a0 l     O .bss	00000004 ifs
+effb368c l       .data	00000000 .LANCHOR1
+effb368c l     O .data	00000084 reserved_list
+f00008a4 l       .bss	00000000 .LANCHOR7
+f00008a4 l     O .bss	00000004 last_return_code
+f00008a8 l       .bss	00000000 .LANCHOR0
+f00008a8 l     O .bss	00000100 map
+f00009a8 l       .bss	00000000 .LANCHOR4
+f00009a8 l     O .bss	00000004 do_repeat
+f00009ac l       .bss	00000000 .LANCHOR5
+f00009ac l     O .bss	00000101 the_command.7785
+f0000ab0 l       .bss	00000000 .LANCHOR2
+f0000ab0 l     O .bss	00000004 top_vars
+effb3688 l       .data	00000000 .LC25
+00000000 l    df *ABS*	00000000 autoboot.c
+f0000ab4 l       .bss	00000000 .LANCHOR0
+f0000ab4 l     O .bss	00000004 stored_bootdelay
+00000000 l    df *ABS*	00000000 board_f.c
+eff59a4c l     F .text	00000008 log_init
+eff59a5c l     F .text	0000003c setup_mon_len
+eff59a98 l     F .text	00000014 reserve_round_4k
+eff59aac l     F .text	00000044 reserve_uboot
+eff59af0 l     F .text	00000018 reserve_malloc
+eff59b08 l     F .text	00000020 reserve_global_data
+eff59b28 l     F .text	0000004c reserve_fdt
+eff59b74 l     F .text	0000002c setup_board_part1
+eff59ba0 l     F .text	0000001c setup_board_part2
+eff59bbc l     F .text	00000008 initf_dm
+eff59bcc l     F .text	00000044 jump_to_copy
+eff59c10 l     F .text	0000005c setup_reloc
+eff59c6c l     F .text	00000064 reloc_fdt
+eff59cd0 l     F .text	0000006c reserve_board
+eff59d3c l     F .text	00000034 announce_dram_init
+eff59d70 l     F .text	00000040 init_func_spi
+eff59db0 l     F .text	00000040 init_func_i2c
+eff59df0 l     F .text	00000048 init_baud_rate
+eff59e38 l     F .text	00000034 initf_bootstage
+eff59e74 l     F .text	00000008 display_text_info
+eff59e8c l     F .text	00000008 reserve_video
+eff59e94 l     F .text	00000008 reserve_trace
+eff59e9c l     F .text	00000008 setup_machine
+eff59ea4 l     F .text	00000008 reserve_bootstage
+eff59eac l     F .text	00000008 display_new_sp
+eff59eb4 l     F .text	00000008 reloc_bootstage
+eff59ebc l     F .text	00000008 initf_console_record
+eff59ec4 l     F .text	0000004c show_dram_config
+eff59f1c l     F .text	00000084 setup_dest_addr
+eff59fa0 l     F .text	00000048 reserve_stacks
+effb3710 l       .data	00000000 .LANCHOR0
+effb3710 l     O .data	000000bc init_sequence_f
+00000000 l    df *ABS*	00000000 board_r.c
+eff5a020 l     F .text	00000008 bootstage_relocate
+eff5a028 l     F .text	00000014 initr_reloc
+eff5a03c l     F .text	00000010 initr_barrier
+eff5a054 l     F .text	00000008 initr_spi
+eff5a05c l     F .text	00000028 run_main_loop
+eff5a084 l     F .text	00000038 initr_net
+eff5a0bc l     F .text	00000054 initr_ethaddr
+eff5a110 l     F .text	00000030 initr_jumptable
+eff5a140 l     F .text	00000030 initr_pci
+eff5a170 l     F .text	00000048 initr_env
+eff5a1b8 l     F .text	00000030 initr_addr_map
+eff5a1e8 l     F .text	00000034 initr_trap
+eff5a21c l     F .text	00000030 initr_serial
+eff5a24c l     F .text	00000034 initr_bootstage
+eff5a280 l     F .text	00000044 initr_malloc
+eff5a2c4 l     F .text	00000030 initr_unlock_ram_in_cache
+eff59a54 l     F .text	00000008 log_init
+eff5a2f4 l     F .text	00000008 initr_trace
+eff5a2fc l     F .text	00000008 initr_console_record
+eff5a304 l     F .text	00000008 initr_announce
+eff5a314 l     F .text	00000080 initr_flash
+eff5a394 l     F .text	00000030 initr_secondary_cpu
+eff5a3c4 l     F .text	00000058 initr_reloc_global_data
+effb37cc l       .data	00000000 .LANCHOR0
+effb37cc l     O .data	00000078 init_sequence_r
+00000000 l    df *ABS*	00000000 board_info.c
+00000000 l    df *ABS*	00000000 bootm.c
+00000000 l    df *ABS*	00000000 bootm_os.c
+eff5af44 l     F .text	00000074 copy_args
+eff5afb8 l     F .text	00000084 do_bootm_rtems
+eff5b03c l     F .text	000000e0 do_bootm_plan9
+eff5b11c l     F .text	0000007c do_bootm_standalone
+eff5b198 l     F .text	000000b8 do_bootm_qnxelf
+eff5b250 l     F .text	00000138 do_bootm_netbsd
+eff5b4a0 l     F .text	00000068 do_bootm_vxworks
+effb3844 l       .data	00000000 .LANCHOR1
+effb3844 l     O .data	00000060 boot_os
+eff9a1d0 l       .rodata	00000000 .LANCHOR0
+eff9a1d0 l     O .rodata	0000000e __func__.7646
+00000000 l    df *ABS*	00000000 fdt_support.c
+eff5b5bc l     F .text	000000c0 of_bus_default_map
+eff5b6f4 l     F .text	000000f0 fdt_fixup_stdout
+eff5b7e4 l     F .text	00000090 of_bus_default_translate
+effb38a4 l       .data	00000000 .LANCHOR4
+effb38a4 l     O .data	00000018 of_busses
+eff9a1fc l       .rodata	00000000 .LANCHOR1
+eff9a1fc l     O .rodata	00000018 __func__.8015
+eff9a1ac l       .rodata	00000000 .LANCHOR5
+eff9a1ac l     O .rodata	00000017 __FUNCTION__.8322
+eff9a194 l       .rodata	00000000 .LANCHOR3
+eff9a194 l     O .rodata	00000017 __FUNCTION__.8159
+eff9a214 l       .rodata	00000000 .LANCHOR0
+eff9a214 l     O .rodata	00000011 __func__.8027
+00000000 l    df *ABS*	00000000 miiphyutil.c
+eff5cd10 l     F .text	00000078 miiphy_get_active_dev
+f0000ab8 l       .bss	00000000 .LANCHOR1
+f0000ab8 l     O .bss	00000004 current_mii
+f0000abc l       .bss	00000000 .LANCHOR0
+f0000abc l     O .bss	00000008 mii_devs
+00000000 l    df *ABS*	00000000 usb.c
+eff5d36c l     F .text	00000064 usb_set_maxpacket_ep
+eff5d570 l     F .text	0000006c usb_get_descriptor
+eff5d5dc l     F .text	000000a0 get_descriptor_len
+eff5d67c l     F .text	000000fc usb_setup_descriptor
+eff5d778 l     F .text	00000094 usb_get_string
+eff5d80c l     F .text	00000124 usb_string_sub
+f0000ac4 l       .bss	00000000 .LANCHOR3
+f0000ac4 l     O .bss	00000004 dev_index
+f0000ae0 l       .bss	00000000 .LANCHOR1
+f0000ae0 l     O .bss	00012c00 usb_dev
+f00136e0 l       .bss	00000000 .LANCHOR0
+f00136e0 l     O .bss	00000004 asynch_allowed
+eff9a280 l       .rodata	00000000 .LANCHOR2
+eff9a280 l     O .rodata	00000015 __func__.9523
+00000000 l    df *ABS*	00000000 usb_hub.c
+eff5e6a4 l     F .text	00000060 usb_set_port_feature
+eff5e704 l     F .text	00000060 usb_clear_port_feature
+eff5e764 l     F .text	00000078 usb_get_hub_descriptor
+eff5ea80 l     F .text	000005b4 usb_hub_configure
+f00136e4 l       .bss	00000000 .LANCHOR3
+f00136e4 l     O .bss	00000004 running.9360
+effb38bc l       .data	00000000 .LANCHOR2
+effb38bc l     O .data	00000008 usb_scan_list
+f00136e8 l       .bss	00000000 .LANCHOR0
+f00136e8 l     O .bss	00000004 usb_hub_index
+f00136ec l       .bss	00000000 .LANCHOR1
+f00136ec l     O .bss	00000440 hub_dev
+00000000 l    df *ABS*	00000000 usb_storage.c
+eff5f088 l     F .text	00000020 usb_stor_irq
+eff5f0a8 l     F .text	00000130 usb_stor_BBB_reset
+eff5f1d8 l     F .text	00000104 usb_stor_CB_reset
+eff5f2dc l     F .text	00000060 usb_stor_BBB_clear_endpt_stall.isra.3
+eff5f33c l     F .text	000002c4 usb_stor_BBB_transport
+eff5f600 l     F .text	00000204 usb_stor_CB_comdat
+eff5f804 l     F .text	000000f4 usb_stor_CBI_get_status.isra.5
+eff5f8f8 l     F .text	00000244 usb_stor_CB_transport
+eff5fb3c l     F .text	00000094 usb_request_sense.constprop.11
+eff5fbd0 l     F .text	0000015c usb_stor_read
+eff5fd2c l     F .text	0000015c usb_stor_write
+f0013b2c l       .bss	00000000 .LANCHOR5
+f0013b2c l     O .bss	00000188 usb_stor
+f0013cb4 l       .bss	00000000 .LANCHOR3
+f0013cb4 l     O .bss	000003b8 usb_dev_desc
+f001406c l       .bss	00000000 .LANCHOR4
+f001406c l     O .bss	00000004 usb_max_devs
+eff9b6b8 l       .rodata	00000000 .LANCHOR0
+eff9b6b8 l     O .rodata	00000020 us_direction
+f0014070 l       .bss	00000000 .LANCHOR1
+f0014070 l     O .bss	00000004 CBWTag
+f0014080 l       .bss	00000000 .LANCHOR2
+f0014080 l     O .bss	000000a0 usb_ccb
+00000000 l    df *ABS*	00000000 flash.c
+00000000 l    df *ABS*	00000000 splash.c
+00000000 l    df *ABS*	00000000 cli_readline.c
+eff60a14 l     F .text	000000ec delete_char.part.0
+eff60b00 l     F .text	00000100 cread_add_char
+f0014120 l       .bss	00000000 .LANCHOR8
+f0014120 l     O .bss	00000050 hist_list
+f0014170 l       .bss	00000000 .LANCHOR7
+f0014170 l     O .bss	00001414 hist_lines
+f0015584 l       .bss	00000000 .LANCHOR3
+f0015584 l     O .bss	00000004 hist_max
+f0015588 l       .bss	00000000 .LANCHOR2
+f0015588 l     O .bss	00000004 initted.7650
+f001558c l       .bss	00000000 .LANCHOR4
+f001558c l     O .bss	00000004 hist_add_idx
+eff9b690 l       .rodata	00000000 .LANCHOR1
+eff9b690 l     O .rodata	00000009 tab_seq
+eff9b144 l       .rodata	00000000 .LANCHOR0
+eff9b144 l     O .rodata	00000004 erase_seq
+f0015590 l       .bss	00000000 .LANCHOR6
+f0015590 l     O .bss	00000004 hist_num
+effb38c4 l       .data	00000000 .LANCHOR5
+effb38c4 l     O .data	00000004 hist_cur
+eff9a414 l       .rodata	00000000 .L55
+eff9a474 l       .rodata	00000000 .L63
+00000000 l    df *ABS*	00000000 cli_simple.c
+00000000 l    df *ABS*	00000000 ddr_spd.c
+00000000 l    df *ABS*	00000000 hwconfig.c
+eff61604 l     F .text	0000014c hwconfig_parse
+eff61750 l     F .text	000000fc __hwconfig
+00000000 l    df *ABS*	00000000 console.c
+eff619b4 l     F .text	000000d0 console_setfile
+eff61f94 l     F .text	000000d4 on_console
+f0015594 l       .bss	00000000 .LANCHOR1
+f0015594 l     O .bss	00000004 ctrlc_was_pressed
+f0015598 l       .bss	00000000 .LANCHOR0
+f0015598 l     O .bss	00000004 ctrlc_disabled
+00000000 l    df *ABS*	00000000 dlmalloc.c
+f001559c l       .bss	00000000 .LANCHOR6
+f001559c l     O .bss	00000004 max_total_mem
+f00155a0 l       .bss	00000000 .LANCHOR5
+f00155a0 l     O .bss	00000004 max_sbrked_mem
+effb38c8 l       .data	00000000 .LANCHOR3
+effb38c8 l     O .data	00000004 trim_threshold
+effb38cc l       .data	00000000 .LANCHOR2
+effb38cc l     O .data	00000004 sbrk_base
+f00155a4 l       .bss	00000000 .LANCHOR4
+f00155a4 l     O .bss	00000004 top_pad
+f00155a8 l       .bss	00000000 .LANCHOR1
+f00155a8 l     O .bss	00000028 current_mallinfo
+effb38d0 l       .data	00000000 .LANCHOR0
+effb38d0 l     O .data	00000408 av_
+00000000 l    df *ABS*	00000000 image.c
+eff63390 l     F .text	00000054 on_loadaddr
+effb3cd8 l       .data	00000000 .LANCHOR3
+effb3cd8 l     O .data	00000084 uimage_os
+effb3d5c l       .data	00000000 .LANCHOR5
+effb3d5c l     O .data	0000018c uimage_type
+effb3ee8 l       .data	00000000 .LANCHOR1
+effb3ee8 l     O .data	00000030 table_info
+effb3f6c l     O .data	00000138 uimage_arch
+effb3f18 l     O .data	00000054 uimage_comp
+effb3f18 l       .data	00000000 .LANCHOR6
+effb67f8 l       .u_boot_list	00000000 .LANCHOR7
+effb67f8 l     O .u_boot_list	00000000 start.8170
+effb67f8 l     O .u_boot_list	00000000 start.8162
+effb67f8 l       .u_boot_list	00000000 .LANCHOR8
+effb67f8 l     O .u_boot_list	00000000 end.8165
+effb3f6c l       .data	00000000 .LANCHOR4
+00000000 l    df *ABS*	00000000 image-fdt.c
+eff644a0 l     F .text	00000044 fdt_error
+00000000 l    df *ABS*	00000000 image-fit.c
+eff64c3c l     F .text	0000007c fit_image_get_address
+eff65190 l     F .text	00000174 fit_image_print_data
+00000000 l    df *ABS*	00000000 memsize.c
+00000000 l    df *ABS*	00000000 stdio.c
+eff66a44 l     F .text	0000002c stdio_serial_tstc
+eff66a70 l     F .text	0000002c stdio_serial_getc
+eff66a9c l     F .text	00000030 stdio_serial_puts
+eff66acc l     F .text	00000030 stdio_serial_putc
+f00155dc l       .bss	00000000 .LANCHOR0
+f00155dc l     O .bss	0000004c devs
+00000000 l    df *ABS*	00000000 cli.c
+00000000 l    df *ABS*	00000000 command.c
+effb6028 l       .u_boot_list	00000000 .LANCHOR1
+effb6028 l     O .u_boot_list	00000000 start.7525
+effb6028 l     O .u_boot_list	00000000 start.7521
+effb6778 l       .u_boot_list	00000000 .LANCHOR0
+effb6778 l     O .u_boot_list	00000000 end.7528
+eff9a164 l       .rodata	00000000 .LANCHOR2
+eff9a164 l     O .rodata	00000016 CSWTCH.23
+00000000 l    df *ABS*	00000000 s_record.c
+eff673e0 l     F .text	00000048 hex1_bin
+eff67428 l     F .text	00000050 hex2_bin
+eff9b668 l       .rodata	00000000 .L20
+00000000 l    df *ABS*	00000000 xyzModem.c
+eff676e4 l     F .text	0000006c CYGACC_COMM_IF_GETC_TIMEOUT.isra.0
+eff67750 l     F .text	0000002c xyzModem_flush
+eff6777c l     F .text	00000274 xyzModem_get_hdr
+f0015628 l       .bss	00000000 .LANCHOR0
+f0015628 l     O .bss	00000434 xyz
+eff9b6f0 l       .rodata	00000000 .L182
+00000000 l    df *ABS*	00000000 part.c
+effb6850 l       .u_boot_list	00000000 .LANCHOR0
+effb6850 l     O .u_boot_list	00000000 start.7603
+effb6850 l     O .u_boot_list	00000000 start.7607
+effb6850 l     O .u_boot_list	00000000 start.7535
+effb6850 l     O .u_boot_list	00000000 start.7539
+effb6850 l     O .u_boot_list	00000000 start.7689
+effb6850 l     O .u_boot_list	00000000 start.7693
+effb6868 l       .u_boot_list	00000000 .LANCHOR1
+effb6868 l     O .u_boot_list	00000000 end.7610
+effb6868 l     O .u_boot_list	00000000 end.7542
+effb6868 l     O .u_boot_list	00000000 end.7696
+eff9afb8 l       .rodata	00000000 .L13
+eff9b4e8 l       .rodata	00000000 .L63
+eff9b514 l       .rodata	00000000 .L209
+00000000 l    df *ABS*	00000000 part_dos.c
+eff68a9c l     F .text	0000009c test_block_type
+eff68b38 l     F .text	00000298 print_partition_extended
+eff68e24 l     F .text	00000098 part_test_dos
+eff68ebc l     F .text	000002c4 part_get_info_extended.constprop.1
+00000000 l    df *ABS*	00000000 libata.c
+00000000 l    df *ABS*	00000000 sata.c
+eff692ec l     F .text	00000030 sata_bwrite
+eff6931c l     F .text	00000030 sata_bread
+00000000 l    df *ABS*	00000000 sata_sil.c
+eff69478 l     F .text	000000dc sil_sata_dump_fis
+eff69554 l     F .text	0000006c ata_wait_register
+eff695c0 l     F .text	00000068 sil_init_port
+eff69628 l     F .text	000000d4 sil_exec_cmd.constprop.0
+eff696fc l     F .text	00000074 sil_read_fis.constprop.1
+eff69770 l     F .text	0000016c sil_sata_rw_cmd
+eff698dc l     F .text	0000006c sil_sata_rw_lba28
+eff69948 l     F .text	00000184 sil_sata_rw_cmd_ext
+eff69acc l     F .text	00000078 sil_sata_rw_lba48
+effb40b0 l       .data	00000000 .LANCHOR4
+effb40b0 l     O .data	0000000c spd_str.8186
+effb40bc l       .data	00000000 .LANCHOR3
+effb40bc l     O .data	00000070 supported
+f0015a5c l       .bss	00000000 .LANCHOR1
+f0015a5c l     O .bss	00000018 sata_info
+f0015a74 l       .bss	00000000 .LANCHOR0
+f0015a74 l     O .bss	00000004 init_done.8354
+f0015a78 l       .bss	00000000 .LANCHOR2
+f0015a78 l     O .bss	00000004 idx.8355
+00000000 l    df *ABS*	00000000 blk_legacy.c
+eff6a4a4 l     F .text	0000007c get_desc
+effb5fe0 l       .u_boot_list	00000000 .LANCHOR0
+effb5fe0 l     O .u_boot_list	00000000 start.7641
+effb5fe0 l     O .u_boot_list	00000000 start.7645
+effb5fe0 l     O .u_boot_list	00000000 start.7660
+effb5fe0 l     O .u_boot_list	00000000 start.7664
+effb6028 l       .u_boot_list	00000000 .LANCHOR1
+effb6028 l     O .u_boot_list	00000000 end.7648
+effb6028 l     O .u_boot_list	00000000 end.7667
+00000000 l    df *ABS*	00000000 sec.c
+f0015a7c l       .bss	00000000 .LANCHOR1
+f0015a7c l     O .bss	0000004d compat_strlist.7450
+eff9b584 l       .rodata	00000000 .LANCHOR0
+eff9b584 l     O .rodata	0000008c sec_rev_prop_list.7449
+00000000 l    df *ABS*	00000000 mmc.c
+eff6ad40 l     F .text	00000040 mmc_set_ios
+eff6ad80 l     F .text	000000d8 mmc_set_capacity
+eff6af3c l     F .text	00000064 mmc_send_ext_csd
+eff6afa0 l     F .text	000000c4 mmc_read_and_compare_ext_csd
+eff6b064 l     F .text	0000006c mmc_go_idle
+eff6b0d0 l     F .text	00000090 mmc_send_op_cond_iter
+eff6b2c8 l     F .text	000003ac mmc_startup_v4
+eff6b674 l     F .text	000000b4 mmc_set_card_speed
+eff6bd10 l     F .text	00000bec mmc_startup
+eff9a15c l       .rodata	00000000 .LANCHOR7
+eff9b3bc l       .rodata	00000000 .LANCHOR3
+eff9b3bc l     O .rodata	00000020 mmc_modes_by_pref
+eff9b1e0 l       .rodata	00000000 .LANCHOR8
+eff9b1e0 l     O .rodata	00000018 freqs.9130
+eff9b534 l       .rodata	00000000 .LANCHOR9
+eff9b534 l     O .rodata	00000040 sd_au_size.9369
+effb412c l       .data	00000000 .LANCHOR0
+effb412c l     O .data	00000030 names.9125
+eff9b460 l       .rodata	00000000 .LANCHOR5
+eff9b460 l     O .rodata	00000010 multipliers
+eff9b184 l       .rodata	00000000 .LANCHOR6
+eff9b184 l     O .rodata	00000010 fbase
+eff9a298 l       .rodata	00000000 .LANCHOR10
+eff9a298 l     O .rodata	00000009 __func__.9559
+eff9b410 l       .rodata	00000000 .LANCHOR1
+eff9b410 l     O .rodata	00000020 mmc_versions.9481
+eff9b574 l       .rodata	00000000 .LANCHOR2
+eff9b574 l     O .rodata	00000010 sd_modes_by_pref
+eff9b148 l       .rodata	00000000 .LANCHOR4
+eff9b148 l     O .rodata	0000003c ext_csd_bus_width
+eff9b3dc l       .rodata	00000000 .L10
+eff9b3fc l       .rodata	00000000 .L318
+00000000 l    df *ABS*	00000000 mmc_write.c
+00000000 l    df *ABS*	00000000 mmc_legacy.c
+eff6ce40 l     F .text	00000070 mmc_select_hwpartp
+eff6ceb0 l     F .text	00000054 mmc_get_dev
+effb415c l       .data	00000000 .LANCHOR1
+effb415c l     O .data	00000004 cur_dev_num
+f0015acc l       .bss	00000000 .LANCHOR0
+f0015acc l     O .bss	00000008 mmc_devices
+00000000 l    df *ABS*	00000000 fsl_esdhc.c
+eff6d018 l     F .text	00000198 esdhc_set_ios
+eff6d1b0 l     F .text	00000070 esdhc_getcd
+eff6d220 l     F .text	00000118 esdhc_init
+eff6d338 l     F .text	0000004c check_and_invalidate_dcache_range.isra.3
+eff6d384 l     F .text	00000538 esdhc_send_cmd
+effb4160 l       .data	00000000 .LANCHOR0
+effb4160 l     O .data	00000014 esdhc_ops
+00000000 l    df *ABS*	00000000 date.c
+effb4174 l       .data	00000000 .LANCHOR1
+effb4174 l     O .data	00000030 month_days
+eff9b430 l       .rodata	00000000 .LANCHOR0
+eff9b430 l     O .rodata	00000030 month_offset
+00000000 l    df *ABS*	00000000 pt7c4338.c
+eff6db00 l     F .text	00000034 rtc_read
+eff6db34 l     F .text	00000038 rtc_write
+00000000 l    df *ABS*	00000000 input.c
+eff9b290 l     O .rodata	00000064 kbd_plain_xlate
+effb41a4 l       .data	00000000 .LANCHOR1
+effb41a4 l     O .data	00000020 kbd_to_ansi364
+effb41c4 l     O .data	00000064 kbd_ctrl_xlate
+effb4228 l       .data	00000000 .LANCHOR2
+effb4228 l     O .data	0000008c kbd_entry
+eff9b2f4 l     O .rodata	00000084 kbd_plain_xlate_german
+effb4338 l     O .data	00000064 kbd_shift_xlate
+effb42b4 l     O .data	00000084 kbd_shift_xlate_german
+effb439c l     O .data	00000058 kbd_right_alt_xlate_german
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 util.c
+eff9a23c l       .rodata	00000000 .LANCHOR0
+eff9a23c l     O .rodata	00000014 __func__.8271
+00000000 l    df *ABS*	00000000 ctrl_regs.c
+00000000 l    df *ABS*	00000000 options.c
+00000000 l    df *ABS*	00000000 lc_common_dimm_params.c
+00000000 l    df *ABS*	00000000 ddr3_dimm_params.c
+00000000 l    df *ABS*	00000000 mpc85xx_ddr_gen3.c
+eff9a17c l       .rodata	00000000 .LANCHOR0
+eff9a17c l     O .rodata	00000018 __FUNCTION__.7976
+00000000 l    df *ABS*	00000000 i2c_core.c
+eff6e538 l     F .text	000000ac i2c_init_bus
+effb67f8 l       .u_boot_list	00000000 .LANCHOR0
+effb67f8 l     O .u_boot_list	00000000 start.7656
+effb67f8 l     O .u_boot_list	00000000 start.7660
+effb67f8 l     O .u_boot_list	00000000 start.7678
+effb67f8 l     O .u_boot_list	00000000 start.7702
+effb6850 l       .u_boot_list	00000000 .LANCHOR1
+effb6850 l     O .u_boot_list	00000000 end.7663
+effb6850 l     O .u_boot_list	00000000 end.7681
+effb6850 l     O .u_boot_list	00000000 end.7705
+00000000 l    df *ABS*	00000000 fsl_i2c.c
+eff6e99c l     F .text	00000108 set_i2c_bus_speed
+eff6eaa4 l     F .text	00000090 i2c_wait4bus
+eff6eb34 l     F .text	000002b0 fsl_i2c_write
+eff6ede4 l     F .text	00000738 __i2c_read
+eff6f51c l     F .text	0000004c fsl_i2c_read
+eff6f568 l     F .text	00000078 fsl_i2c_probe_chip
+eff6f5e0 l     F .text	00000210 fsl_i2c_init
+eff6f7f0 l     F .text	00000074 fsl_i2c_set_bus_speed
+eff9b20c l       .rodata	00000000 .LANCHOR0
+eff9b20c l     O .rodata	00000010 i2c_base
+00000000 l    df *ABS*	00000000 mtdcore.c
+f0015ad4 l       .bss	00000000 .LANCHOR0
+f0015ad4 l     O .bss	00000200 mtd_idr
+eff9a26c l       .rodata	00000000 .LANCHOR1
+eff9a26c l     O .rodata	00000011 __func__.9405
+eff9a25c l       .rodata	00000000 .LANCHOR2
+eff9a25c l     O .rodata	0000000f __func__.9366
+00000000 l    df *ABS*	00000000 mtd_uboot.c
+00000000 l    df *ABS*	00000000 mtdpart.c
+eff702d8 l     F .text	000000a8 part_erase
+effb4414 l       .data	00000000 .LANCHOR0
+effb4414 l     O .data	00000008 mtd_partitions
+00000000 l    df *ABS*	00000000 cfi_flash.c
+eff70420 l     F .text	00000068 flash_get_info
+eff70488 l     F .text	0000005c flash_make_cmd
+eff704e4 l     F .text	000000a4 flash_write_cmd
+eff70588 l     F .text	00000048 flash_unlock_seq
+eff705d0 l     F .text	000000c4 flash_isset
+eff70694 l     F .text	000000e4 find_sector
+eff70778 l     F .text	00000048 cfi_reverse_geometry
+eff707c0 l     F .text	00000084 flash_add_byte.isra.3
+eff70844 l     F .text	000000bc flash_isequal.constprop.13
+eff70900 l     F .text	00000204 flash_status_check
+eff70b04 l     F .text	00000180 flash_full_status_check
+eff70c84 l     F .text	00000204 flash_write_cfiword
+eff71b44 l     F .text	00000060 __flash_cmd_reset
+f0015cd4 l       .bss	00000000 .LANCHOR1
+f0015cd4 l     O .bss	00000004 saved_sector.9106
+eff9b1d8 l       .rodata	00000000 .LANCHOR3
+eff9b1d8 l     O .rodata	00000008 flash_offset_cfi
+effb441c l       .data	00000000 .LANCHOR2
+effb441c l     O .data	00000004 flash_verbose
+f0015cd8 l       .bss	00000000 .LANCHOR0
+f0015cd8 l     O .bss	00000004 saved_info.9107
+00000000 l    df *ABS*	00000000 cfi_mtd.c
+eff72648 l     F .text	00000004 cfi_mtd_sync
+eff7264c l     F .text	00000064 cfi_mtd_unlock
+eff726b0 l     F .text	00000064 cfi_mtd_lock
+eff72714 l     F .text	0000007c cfi_mtd_write
+eff72790 l     F .text	00000050 cfi_mtd_read
+eff727e0 l     F .text	00000104 cfi_mtd_erase
+f0015cdc l       .bss	00000000 .LANCHOR1
+f0015cdc l     O .bss	00000010 cfi_mtd_names
+f0015cf0 l       .bss	00000000 .LANCHOR0
+f0015cf0 l     O .bss	000000d8 cfi_mtd_info
+00000000 l    df *ABS*	00000000 nand.c
+f0015dc8 l       .bss	00000000 .LANCHOR0
+f0015dc8 l     O .bss	00000004 nand_info
+00000000 l    df *ABS*	00000000 nand_bbt.c
+effb4420 l       .data	00000000 .LANCHOR2
+effb4420 l     O .data	00000024 bbt_main_no_oob_descr
+effb44b8 l     O .data	00000004 bbt_pattern
+effb4444 l       .data	00000000 .LANCHOR4
+effb4444 l     O .data	00000024 bbt_main_descr
+effb448c l     O .data	00000004 mirror_pattern
+effb4494 l       .data	00000000 .LANCHOR3
+effb4494 l     O .data	00000024 bbt_mirror_no_oob_descr
+effb44c0 l       .data	00000000 .LANCHOR6
+effb44c0 l     O .data	00000002 scan_ff_pattern
+effb44c8 l       .data	00000000 .LANCHOR5
+effb44c8 l     O .data	00000024 bbt_mirror_descr
+00000000 l    df *ABS*	00000000 nand_ids.c
+00000000 l    df *ABS*	00000000 nand_util.c
+eff72b80 l     F .text	000000dc check_skip_len
+00000000 l    df *ABS*	00000000 nand_ecc.c
+00000000 l    df *ABS*	00000000 nand_base.c
+00000000 l    df *ABS*	00000000 nand_timings.c
+00000000 l    df *ABS*	00000000 fsl_elbc_nand.c
+effb4468 l       .data	00000000 .LANCHOR1
+effb4468 l     O .data	00000024 bbt_main_descr
+effb44bc l     O .data	00000004 bbt_pattern
+effb44c4 l     O .data	00000001 scan_ff_pattern
+effb4490 l     O .data	00000004 mirror_pattern
+effb52f8 l       .data	00000000 .LANCHOR3
+effb52f8 l     O .data	00000024 largepage_memorybased
+effb44ec l       .data	00000000 .LANCHOR2
+effb44ec l     O .data	00000024 bbt_mirror_descr
+00000000 l    df *ABS*	00000000 sf_probe.c
+00000000 l    df *ABS*	00000000 spi_flash.c
+eff73818 l     F .text	00000054 read_sr
+00000000 l    df *ABS*	00000000 spi_flash_ids.c
+00000000 l    df *ABS*	00000000 sf.c
+eff741f0 l     F .text	00000084 spi_flash_read_write
+00000000 l    df *ABS*	00000000 e1000.c
+eff742d4 l     F .text	00000058 e1000_config_collision_dist
+eff7432c l     F .text	00000080 e1000_force_mac_fc
+eff743ac l     F .text	00000168 e1000_transmit
+eff74514 l     F .text	00000054 e1000_is_onboard_nvm_eeprom
+eff74568 l     F .text	00000044 e1000_put_hw_eeprom_semaphore
+eff745ac l     F .text	0000004c e1000_is_second_port
+eff745f8 l     F .text	00000068 e1000_check_phy_reset_block
+eff74660 l     F .text	000000d4 e1000_set_media_type
+eff74734 l     F .text	000000ac e1000_disable
+eff747e0 l     F .text	000000fc e1000_get_hw_eeprom_semaphore
+eff748dc l     F .text	000000c0 e1000_swfw_sync_acquire
+eff7499c l     F .text	00000084 e1000_write_kmrn_reg
+eff74a20 l     F .text	00000064 e1000_swfw_sync_release
+eff74a84 l     F .text	00000058 e1000_raise_mdi_clk.isra.9
+eff74adc l     F .text	00000058 e1000_lower_mdi_clk.isra.10
+eff74b34 l     F .text	000000c0 e1000_shift_out_mdi_bits
+eff74bf4 l     F .text	000001ac e1000_read_phy_reg
+eff74da0 l     F .text	000000b0 e1000_config_mac_to_phy
+eff74e50 l     F .text	000000d8 e1000_write_phy_reg
+eff74f28 l     F .text	000002fc e1000_config_fc_after_link_up
+eff75224 l     F .text	000002b0 e1000_phy_hw_reset.part.15
+eff754d4 l     F .text	00000160 e1000_phy_reset.part.16
+eff756fc l     F .text	000000e8 e1000_shift_out_ee_bits
+eff757e4 l     F .text	000000b8 e1000_shift_in_ee_bits
+eff75c4c l     F .text	000002f4 e1000_read_eeprom
+eff75f40 l     F .text	000002d4 e1000_init_eeprom_params
+eff76840 l     F .text	000000ac e1000_poll
+eff768ec l     F .text	000020ac e1000_init
+effb54fc l       .data	00000000 .LANCHOR6
+effb54fc l     O .data	00000008 e1000_hw_list
+f0015dcc l       .bss	00000000 .LANCHOR3
+f0015dcc l     O .bss	00000004 rx_last
+f0015e00 l       .bss	00000000 .LANCHOR1
+f0015e00 l     O .bss	00000100 __tx_base
+f0015f00 l       .bss	00000000 .LANCHOR2
+f0015f00 l     O .bss	00000004 rx_tail
+f0015f80 l       .bss	00000000 .LANCHOR4
+f0015f80 l     O .bss	00000100 __rx_base
+effb5504 l       .data	00000000 .LANCHOR7
+effb5504 l     O .data	00000540 e1000_supported
+f0016080 l       .bss	00000000 .LANCHOR5
+f0016080 l     O .bss	00001000 __packet
+f0017080 l       .bss	00000000 .LANCHOR0
+f0017080 l     O .bss	00000004 tx_tail
+eff9b0c4 l       .rodata	00000000 .L402
+eff9b060 l       .rodata	00000000 .L588
+eff9b07c l       .rodata	00000000 .L674
+00000000 l    df *ABS*	00000000 tsec.c
+eff78f28 l     F .text	00000108 tsec_send
+eff79030 l     F .text	0000013c tsec_recv
+eff7916c l     F .text	000000b4 tsec_halt
+eff79220 l     F .text	000003cc tsec_init
+effb5a44 l       .data	00000000 .LANCHOR0
+effb5a44 l     O .data	00000054 tsec_info
+00000000 l    df *ABS*	00000000 fsl_mdio.c
+eff79974 l     F .text	0000003c fsl_pq_mdio_reset
+00000000 l    df *ABS*	00000000 vsc7385.c
+00000000 l    df *ABS*	00000000 phy.c
+eff7a3bc l     F .text	0000022c get_phy_device_by_mask
+effb5a98 l       .data	00000000 .LANCHOR2
+effb5a98 l     O .data	00000044 phy_interface_strings
+effb5adc l       .data	00000000 .LANCHOR0
+effb5adc l     O .data	00000008 phy_drivers
+effb5ae4 l       .data	00000000 .LANCHOR1
+effb5ae4 l     O .data	00000034 genphy_driver
+00000000 l    df *ABS*	00000000 marvell.c
+eff7a8ec l     F .text	000000a8 m88e1xxx_phy_extread
+eff7a994 l     F .text	000000ac m88e1xxx_phy_extwrite
+eff7aa40 l     F .text	00000270 m88e1680_config
+eff7acb0 l     F .text	00000120 m88e1011s_config
+eff7add0 l     F .text	000000d4 m88e1118_config
+eff7aea4 l     F .text	000000f0 m88e1121_config
+eff7af94 l     F .text	00000170 m88e1145_config
+eff7b104 l     F .text	0000017c m88e1310_config
+eff7b280 l     F .text	00000140 m88e1xxx_parse_status
+eff7b3c0 l     F .text	00000050 m88e1011s_startup
+eff7b410 l     F .text	00000074 m88e1118_startup
+eff7b484 l     F .text	000000e0 m88e1149_config
+eff7b564 l     F .text	00000258 m88e1111s_config
+eff7b7bc l     F .text	00000070 m88e1145_startup
+eff7b8c8 l     F .text	0000031c m88e1518_config
+eff7bbe4 l     F .text	000000c4 m88e1510_config
+effb5b18 l       .data	00000000 .LANCHOR3
+effb5b18 l     O .data	00000034 M88E1121R_driver
+effb5b4c l       .data	00000000 .LANCHOR1
+effb5b4c l     O .data	00000034 M88E1149S_driver
+effb5b80 l       .data	00000000 .LANCHOR10
+effb5b80 l     O .data	00000034 M88E1680_driver
+effb5bb4 l       .data	00000000 .LANCHOR0
+effb5bb4 l     O .data	00000034 M88E1310_driver
+effb5be8 l       .data	00000000 .LANCHOR4
+effb5be8 l     O .data	00000034 M88E1118_driver
+effb5c1c l       .data	00000000 .LANCHOR9
+effb5c1c l     O .data	00000034 M88E1518_driver
+effb5c50 l       .data	00000000 .LANCHOR2
+effb5c50 l     O .data	00000034 M88E1145_driver
+effb5c84 l       .data	00000000 .LANCHOR7
+effb5c84 l     O .data	00000034 M88E1011S_driver
+effb5cb8 l       .data	00000000 .LANCHOR6
+effb5cb8 l     O .data	00000034 M88E1111S_driver
+effb5cec l       .data	00000000 .LANCHOR5
+effb5cec l     O .data	00000034 M88E1118R_driver
+effb5d20 l       .data	00000000 .LANCHOR8
+effb5d20 l     O .data	00000034 M88E1510_driver
+00000000 l    df *ABS*	00000000 pci.c
+f0017084 l       .bss	00000000 .LANCHOR0
+f0017084 l     O .bss	00000004 hose_head
+f0017088 l       .bss	00000000 .LANCHOR1
+f0017088 l     O .bss	00000004 indent.7652
+00000000 l    df *ABS*	00000000 pci_auto_old.c
+00000000 l    df *ABS*	00000000 pci_auto_common.c
+00000000 l    df *ABS*	00000000 pci_common.c
+00000000 l    df *ABS*	00000000 fsl_pci_init.c
+eff7d518 l     F .text	00000094 set_inbound_window
+eff7e3ac l     F .text	0000004c __board_serdes_name
+eff9afe8 l       .rodata	00000000 .LANCHOR0
+eff9afe8 l     O .rodata	00000010 devdisr_mask
+00000000 l    df *ABS*	00000000 pci_indirect.c
+eff7e6d4 l     F .text	00000060 indirect_read_config_byte
+eff7e734 l     F .text	00000060 indirect_read_config_word
+eff7e794 l     F .text	00000058 indirect_read_config_dword
+eff7e7ec l     F .text	00000054 indirect_write_config_byte
+eff7e840 l     F .text	00000054 indirect_write_config_word
+eff7e894 l     F .text	0000004c indirect_write_config_dword
+00000000 l    df *ABS*	00000000 serial.c
+eff7e944 l     F .text	0000002c serial_stub_start
+eff7e970 l     F .text	0000002c serial_stub_stop
+eff7e99c l     F .text	00000030 serial_stub_putc
+eff7e9cc l     F .text	00000030 serial_stub_puts
+eff7e9fc l     F .text	0000002c serial_stub_getc
+eff7ea28 l     F .text	0000002c serial_stub_tstc
+eff7ea54 l     F .text	00000058 get_current
+eff7eaac l     F .text	00000004 serial_null
+eff7ed38 l     F .text	00000104 on_baudrate
+f001708c l       .bss	00000000 .LANCHOR1
+f001708c l     O .bss	00000004 serial_devices
+eff9a3bc l       .rodata	00000000 .LANCHOR2
+eff9a3bc l     O .rodata	00000028 baudrate_table
+f0017090 l       .bss	00000000 .LANCHOR0
+f0017090 l     O .bss	00000004 serial_current
+00000000 l    df *ABS*	00000000 serial_ns16550.c
+eff7eef4 l     F .text	00000068 _serial_putc
+eff7ef5c l     F .text	00000008 eserial1_putc
+eff7ef64 l     F .text	00000008 eserial2_putc
+eff7ef6c l     F .text	00000034 eserial1_puts
+eff7efa0 l     F .text	00000034 eserial1_tstc
+eff7efd4 l     F .text	00000034 eserial2_getc
+eff7f008 l     F .text	0000005c _serial_setbrg
+eff7f064 l     F .text	00000008 eserial1_setbrg
+eff7f06c l     F .text	00000008 eserial2_setbrg
+eff7f074 l     F .text	00000058 eserial1_init
+eff7f0cc l     F .text	00000058 eserial2_init
+eff7f124 l     F .text	00000034 eserial2_tstc
+eff7f158 l     F .text	00000034 eserial1_getc
+eff7f18c l     F .text	00000034 eserial2_puts
+eff9b610 l       .rodata	00000000 .LANCHOR0
+eff9b610 l     O .rodata	00000018 serial_ports
+00000000 l    df *ABS*	00000000 ns16550.c
+eff7f228 l     F .text	00000034 NS16550_setbrg
+00000000 l    df *ABS*	00000000 spi.c
+00000000 l    df *ABS*	00000000 fsl_espi.c
+00000000 l    df *ABS*	00000000 fsl-dt-fixup.c
+eff7fa78 l     F .text	0000010c fdt_fixup_usb_mode_phy_type
+eff7fb84 l     F .text	0000015c fsl_fdt_fixup_erratum
+effb5db4 l       .data	00000000 .LANCHOR1
+effb5db4 l     O .data	0000000c modes.8503
+effb5dc0 l       .data	00000000 .LANCHOR2
+effb5dc0 l     O .data	0000000c phys.8504
+effb5dcc l       .data	00000000 .LANCHOR0
+effb5dcc l     O .data	00000010 compat_usb_fsl
+00000000 l    df *ABS*	00000000 fsl-errata.c
+00000000 l    df *ABS*	00000000 ehci-hcd.c
+eff80530 l     F .text	00000008 ehci_get_port_speed
+eff80538 l     F .text	00000018 ehci_set_usbmode
+eff80550 l     F .text	00000040 ehci_get_portsc_register
+eff80590 l     F .text	00000044 ehci_powerup_fixup
+eff805d4 l     F .text	0000006c handshake
+eff80640 l     F .text	000000e0 ehci_shutdown
+eff80720 l     F .text	000000b0 ehci_td_buffer
+eff807d0 l     F .text	00000100 _ehci_poll_int_queue
+eff808d0 l     F .text	00000068 disable_periodic.isra.2
+eff80938 l     F .text	00000070 enable_periodic.isra.3
+eff809a8 l     F .text	00000108 _ehci_destroy_int_queue
+eff80ab0 l     F .text	00000084 ehci_update_endpt2_dev_n_port.isra.4
+eff80b34 l     F .text	0000065c ehci_submit_async
+eff81190 l     F .text	000003ec _ehci_create_int_queue.isra.6
+eff9c2c0 l       .rodata	00000000 .LANCHOR3
+eff9a2a4 l       .rodata	00000000 .LANCHOR0
+eff9a2a4 l     O .rodata	00000017 __func__.9651
+f00170a0 l       .bss	00000000 .LANCHOR1
+f00170a0 l     O .bss	00000120 ehcic
+effb5ddc l       .data	00000000 .LANCHOR2
+effb5ddc l     O .data	00000039 descriptor
+00000000 l    df *ABS*	00000000 ehci-fsl.c
+00000000 l    df *ABS*	00000000 common.c
+00000000 l    df *ABS*	00000000 env.c
+eff825b8 l     F .text	00000064 env_driver_lookup
+effb67e0 l       .u_boot_list	00000000 .LANCHOR0
+effb67e0 l     O .u_boot_list	00000000 start.7634
+effb67e0 l     O .u_boot_list	00000000 start.7626
+effb67f8 l       .u_boot_list	00000000 .LANCHOR1
+effb67f8 l     O .u_boot_list	00000000 end.7629
+00000000 l    df *ABS*	00000000 attr.c
+eff828dc l     F .text	00000180 regex_callback
+00000000 l    df *ABS*	00000000 callback.c
+eff82c50 l     F .text	00000010 clear_callback
+eff82c60 l     F .text	0000007c find_env_callback
+eff82cdc l     F .text	00000060 on_callbacks
+eff82d3c l     F .text	000000b4 set_callback
+effb6778 l       .u_boot_list	00000000 .LANCHOR0
+effb6778 l     O .u_boot_list	00000000 start.7633
+effb6778 l     O .u_boot_list	00000000 start.7626
+effb67e0 l       .u_boot_list	00000000 .LANCHOR1
+effb67e0 l     O .u_boot_list	00000000 end.7629
+f00171c0 l       .bss	00000000 .LANCHOR3
+f00171c0 l     O .bss	00000004 callback_list
+effb5e28 l       .data	00000000 .LANCHOR2
+effb5e28 l     O .data	00000004 first_call
+00000000 l    df *ABS*	00000000 flags.c
+eff82ec8 l     F .text	000000a4 skip_num
+eff82f6c l     F .text	00000010 clear_flags
+eff82f7c l     F .text	00000060 on_flags
+eff830ac l     F .text	000000c0 set_flags
+eff9c2ff l       .rodata	00000000 .LANCHOR3
+eff9b134 l       .rodata	00000000 .LANCHOR1
+eff9b134 l     O .rodata	00000005 env_flags_varaccess_rep
+eff9b124 l       .rodata	00000000 .LANCHOR2
+eff9b124 l     O .rodata	00000010 env_flags_varaccess_mask
+effb5e2c l       .data	00000000 .LANCHOR4
+effb5e2c l     O .data	00000004 first_call
+f00171c4 l       .bss	00000000 .LANCHOR5
+f00171c4 l     O .bss	00000004 flags_list
+eff9b13c l       .rodata	00000000 .LANCHOR0
+eff9b13c l     O .rodata	00000007 env_flags_vartype_rep
+eff9b10c l       .rodata	00000000 .L94
+00000000 l    df *ABS*	00000000 flash.c
+eff8357c l     F .text	00000078 env_flash_init
+eff835f4 l     F .text	00000130 env_flash_save
+eff83724 l     F .text	00000038 env_flash_load
+00000000 l    df *ABS*	00000000 fs.c
+eff8375c l     F .text	00000034 fs_probe_unsupported
+eff83790 l     F .text	00000008 fs_exists_unsupported
+eff83798 l     F .text	00000008 fs_size_unsupported
+eff837a0 l     F .text	00000008 fs_write_unsupported
+eff837a8 l     F .text	00000004 fs_close_unsupported
+eff837ac l     F .text	00000008 fs_uuid_unsupported
+eff837b4 l     F .text	00000008 fs_opendir_unsupported
+eff837bc l     F .text	0000005c fs_get_info
+eff83818 l     F .text	00000048 fs_close
+eff83860 l     F .text	00000008 fs_read_unsupported
+eff83868 l     F .text	00000008 fs_ls_unsupported
+eff83d04 l     F .text	000000c0 fs_ls_generic
+f00171c8 l       .bss	00000000 .LANCHOR2
+f00171c8 l     O .bss	00000054 fs_partition
+f001721c l       .bss	00000000 .LANCHOR1
+f001721c l     O .bss	00000004 fs_type
+f0017220 l       .bss	00000000 .LANCHOR4
+f0017220 l     O .bss	00000004 fs_dev_part
+f0017224 l       .bss	00000000 .LANCHOR3
+f0017224 l     O .bss	00000004 fs_dev_desc
+effb5e30 l       .data	00000000 .LANCHOR0
+effb5e30 l     O .data	000000a8 fstypes
+00000000 l    df *ABS*	00000000 ext4fs.c
+00000000 l    df *ABS*	00000000 ext4_common.c
+eff858b0 l     F .text	0000030c ext4fs_find_file1
+f0017228 l       .bss	00000000 .LANCHOR0
+f0017228 l     O .bss	00000004 symlinknest
+00000000 l    df *ABS*	00000000 dev.c
+f001722c l       .bss	00000000 .LANCHOR0
+f001722c l     O .bss	00000004 part_info
+00000000 l    df *ABS*	00000000 fat.c
+eff85fc0 l     F .text	0000006c downcase
+eff8602c l     F .text	00000074 disk_read
+eff860a0 l     F .text	000001ac get_cluster
+eff8624c l     F .text	00000198 get_fatent
+eff863e4 l     F .text	00000180 next_dent
+eff86564 l     F .text	000001f4 read_bootsectandvi
+eff86758 l     F .text	0000016c fat_itr_root
+eff868c4 l     F .text	000002c0 fat_itr_next
+eff86b84 l     F .text	000001b8 fat_itr_resolve
+f0017230 l       .bss	00000000 .LANCHOR1
+f0017230 l     O .bss	00000054 cur_part_info
+f0017284 l       .bss	00000000 .LANCHOR0
+f0017284 l     O .bss	00000004 cur_dev
+eff9b1b8 l       .rodata	00000000 .L269
+00000000 l    df *ABS*	00000000 fs_internal.c
+eff9a1c4 l       .rodata	00000000 .LANCHOR0
+eff9a1c4 l     O .rodata	0000000b __func__.7515
+00000000 l    df *ABS*	00000000 fdt.c
+eff9b194 l       .rodata	00000000 .L21
+00000000 l    df *ABS*	00000000 fdt_wip.c
+00000000 l    df *ABS*	00000000 fdt_strerror.c
+effb5ed8 l       .data	00000000 .LANCHOR0
+effb5ed8 l     O .data	00000048 fdt_errtable
+00000000 l    df *ABS*	00000000 fdt_sw.c
+00000000 l    df *ABS*	00000000 fdt_rw.c
+eff87f2c l     F .text	000000a4 _fdt_splice
+eff87fd0 l     F .text	0000004c _fdt_splice_struct
+eff8801c l     F .text	00000090 _fdt_packblocks
+eff880ac l     F .text	00000128 _fdt_add_property
+eff881d4 l     F .text	000000a4 _fdt_rw_check_header
+00000000 l    df *ABS*	00000000 fdt_empty_tree.c
+00000000 l    df *ABS*	00000000 fdt_addresses.c
+00000000 l    df *ABS*	00000000 fdt_ro.c
+eff889dc l     F .text	00000074 fdt_path_next_separator
+eff88a50 l     F .text	00000080 _nextprop
+00000000 l    df *ABS*	00000000 fdt_region.c
+00000000 l    df *ABS*	00000000 charset.c
+00000000 l    df *ABS*	00000000 crc7.c
+00000000 l    df *ABS*	00000000 crc8.c
+00000000 l    df *ABS*	00000000 crc16.c
+eff9b710 l       .rodata	00000000 .LANCHOR0
+eff9b710 l     O .rodata	00000200 crc16_tab
+00000000 l    df *ABS*	00000000 fdtdec_common.c
+00000000 l    df *ABS*	00000000 initcall.c
+00000000 l    df *ABS*	00000000 lmb.c
+eff89ad8 l     F .text	000002c8 lmb_add_region
+00000000 l    df *ABS*	00000000 ldiv.c
+00000000 l    df *ABS*	00000000 md5.c
+eff8a240 l     F .text	00000020 byteReverse
+eff8a260 l     F .text	00000900 MD5Transform
+eff8ab60 l     F .text	00000110 MD5Update
+eff8ac70 l     F .text	000000e8 MD5Final
+00000000 l    df *ABS*	00000000 net_utils.c
+00000000 l    df *ABS*	00000000 qsort.c
+00000000 l    df *ABS*	00000000 rc4.c
+00000000 l    df *ABS*	00000000 list_sort.c
+00000000 l    df *ABS*	00000000 sha1.c
+eff8af6c l     F .text	000010c4 sha1_process
+eff9b628 l       .rodata	00000000 .LANCHOR0
+eff9b628 l     O .rodata	00000040 sha1_padding
+00000000 l    df *ABS*	00000000 sha256.c
+eff8c328 l     F .text	000023bc sha256_process
+effb5f20 l       .data	00000000 .LANCHOR0
+effb5f20 l     O .data	00000040 sha256_padding
+00000000 l    df *ABS*	00000000 zlib.c
+eff9ba4e l       .rodata	00000000 .LANCHOR4
+eff9ba4e l     O .rodata	00000800 lenfix
+eff9b910 l       .rodata	00000000 .LANCHOR3
+eff9b910 l     O .rodata	00000040 dbase.7803
+eff9ba10 l       .rodata	00000000 .LANCHOR1
+eff9ba10 l     O .rodata	0000003e lbase.7801
+eff9c24e l       .rodata	00000000 .LANCHOR0
+eff9c24e l     O .rodata	0000003e lext.7802
+eff9b990 l       .rodata	00000000 .LANCHOR5
+eff9b990 l     O .rodata	00000080 distfix
+eff9c28c l       .rodata	00000000 .LANCHOR6
+eff9c28c l     O .rodata	00000026 order.7897
+eff9b950 l       .rodata	00000000 .LANCHOR2
+eff9b950 l     O .rodata	00000040 dext.7804
+eff9b21c l       .rodata	00000000 .L220
+00000000 l    df *ABS*	00000000 gunzip.c
+00000000 l    df *ABS*	00000000 addr_map.c
+f0017288 l       .bss	00000000 .LANCHOR0
+f0017288 l     O .bss	00000180 address_map
+00000000 l    df *ABS*	00000000 hashtable.c
+eff91524 l     F .text	0000003c cmpkey
+eff91560 l     F .text	0000005c _hdelete.isra.0
+eff915bc l     F .text	00000074 drop_var_from_set.part.1
+eff91630 l     F .text	000000f0 match_string
+eff91720 l     F .text	000000ec match_entry
+00000000 l    df *ABS*	00000000 errno.c
+00000000 l    df *ABS*	00000000 display_options.c
+eff9b470 l       .rodata	00000000 .LANCHOR1
+eff9b470 l     O .rodata	00000006 names.7584
+00000000 l    df *ABS*	00000000 crc32.c
+eff9a494 l       .rodata	00000000 .LANCHOR0
+eff9a494 l     O .rodata	00000400 crc_table
+00000000 l    df *ABS*	00000000 ctype.c
+00000000 l    df *ABS*	00000000 div64.c
+00000000 l    df *ABS*	00000000 hang.c
+00000000 l    df *ABS*	00000000 linux_compat.c
+00000000 l    df *ABS*	00000000 linux_string.c
+00000000 l    df *ABS*	00000000 membuff.c
+00000000 l    df *ABS*	00000000 slre.c
+eff92dfc l     F .text	00000050 emit
+eff92e4c l     F .text	00000054 store_char_in_data
+eff92ea0 l     F .text	00000078 get_escape_char
+eff92f18 l     F .text	00000060 relocate
+eff92f78 l     F .text	00000410 match
+eff93388 l     F .text	00000098 loop_greedy
+eff93420 l     F .text	0000008c loop_non_greedy
+eff934ac l     F .text	000000c4 quantifier
+eff93570 l     F .text	00000064 fixup_branch
+eff935d4 l     F .text	0000037c compile
+eff9b378 l       .rodata	00000000 .L36
+00000000 l    df *ABS*	00000000 string.c
+00000000 l    df *ABS*	00000000 tables_csum.c
+00000000 l    df *ABS*	00000000 time.c
+00000000 l    df *ABS*	00000000 rand.c
+00000000 l    df *ABS*	00000000 vsprintf.c
+eff93ea4 l     F .text	000000f0 put_dec_trunc
+eff93f94 l     F .text	00000184 put_dec
+eff94118 l     F .text	00000388 number
+eff944a0 l     F .text	00000138 string
+eff945d8 l     F .text	00000a7c vsnprintf_internal
+eff9aff8 l       .rodata	00000000 .LANCHOR0
+eff9aff8 l     O .rodata	00000010 digits.8433
+f0017408 l       .bss	00000000 .LANCHOR2
+f0017408 l     O .bss	00000016 local.8679
+eff9b1f8 l       .rodata	00000000 .LANCHOR1
+eff9b1f8 l     O .rodata	00000011 hex_asc
+00000000 l    df *ABS*	00000000 panic.c
+eff95398 l     F .text	0000004c panic_finish
+00000000 l    df *ABS*	00000000 strto.c
+eff9544c l     F .text	000000d4 _parse_integer_fixup_radix
+00000000 l    df *ABS*	00000000 strmhz.c
+00000000 l    df *ABS*	00000000 checksum.c
+00000000 l    df *ABS*	00000000 arp.c
+f0017420 l       .bss	00000000 .LANCHOR2
+f0017420 l     O .bss	00000620 arp_tx_packet_buf
+f0017a40 l       .bss	00000000 .LANCHOR1
+f0017a40 l     O .bss	00000004 arp_tx_packet
+f0017a44 l       .bss	00000000 .LANCHOR0
+f0017a44 l     O .bss	00000004 net_arp_wait_reply_ip
+00000000 l    df *ABS*	00000000 bootp.c
+eff95f64 l     F .text	000003ac bootp_handler
+eff965ec l     F .text	00000084 bootp_timeout_handler
+f0017aa8 l       .bss	00000000 .LANCHOR0
+f0017aa8 l     O .bss	00000004 time_taken_max
+00000000 l    df *ABS*	00000000 eth_legacy.c
+eff96670 l     F .text	00000008 __def_eth_init
+eff96a48 l     F .text	000000c0 on_ethaddr
+eff9a228 l       .rodata	00000000 .LANCHOR0
+eff9a228 l     O .rodata	00000014 __func__.8076
+f0017acc l       .bss	00000000 .LANCHOR2
+f0017acc l     O .bss	00000004 index.8115
+f0017ad0 l       .bss	00000000 .LANCHOR1
+f0017ad0 l     O .bss	00000004 eth_devices
+00000000 l    df *ABS*	00000000 eth_common.c
+f0017ad4 l       .bss	00000000 .LANCHOR1
+f0017ad4 l     O .bss	00000004 act.9135
+f0017ad8 l       .bss	00000000 .LANCHOR0
+f0017ad8 l     O .bss	00000004 first_failed.9130
+f0017adc l       .bss	00000000 .LANCHOR2
+f0017adc l     O .bss	00000004 env_changed_id.9136
+00000000 l    df *ABS*	00000000 net.c
+eff97398 l     F .text	00000038 start_again_timeout_handler
+eff973d0 l     F .text	00000004 dummy_handler
+eff973d4 l     F .text	00000050 on_ipaddr
+eff97424 l     F .text	00000050 on_gatewayip
+eff97474 l     F .text	00000050 on_netmask
+eff974c4 l     F .text	00000050 on_serverip
+eff97514 l     F .text	00000048 net_init_loop
+eff97700 l     F .text	00000044 net_clear_handlers
+eff9826c l     F .text	00000050 on_bootfile
+eff9836c l     F .text	0000004c on_nvlan
+eff983b8 l     F .text	0000004c on_vlan
+f0017ae0 l       .bss	00000000 .LANCHOR8
+f0017ae0 l     O .bss	00000004 net_restarted
+eff9c302 l       .rodata	00000000 .LANCHOR10
+f0017ae4 l       .bss	00000000 .LANCHOR0
+f0017ae4 l     O .bss	00000004 udp_packet_handler
+f0017ae8 l       .bss	00000000 .LANCHOR11
+f0017ae8 l     O .bss	00000004 net_ip_id
+f0017aec l       .bss	00000000 .LANCHOR9
+f0017aec l     O .bss	00000004 net_dev_exists
+effb5f88 l       .data	00000000 .LANCHOR5
+effb5f88 l     O .data	00000004 first_call.7846
+f0017af0 l       .bss	00000000 .LANCHOR3
+f0017af0 l     O .bss	00000004 time_start
+f0017af8 l       .bss	00000000 .LANCHOR6
+f0017af8 l     O .bss	00001e20 net_pkt_buf
+f0019918 l       .bss	00000000 .LANCHOR7
+f0019918 l     O .bss	00000004 net_try_count
+f001991c l       .bss	00000000 .LANCHOR2
+f001991c l     O .bss	00000004 time_handler
+f0019920 l       .bss	00000000 .LANCHOR1
+f0019920 l     O .bss	00000004 arp_packet_handler
+f0019924 l       .bss	00000000 .LANCHOR4
+f0019924 l     O .bss	00000004 time_delta
+eff9b478 l       .rodata	00000000 .L103
+00000000 l    df *ABS*	00000000 nfs.c
+eff98404 l     F .text	000000b8 rpc_lookup_reply
+eff984bc l     F .text	000000b0 nfs_mount_reply
+eff9856c l     F .text	000000a0 nfs_umountall_reply
+eff9860c l     F .text	0000011c nfs_lookup_reply
+eff98728 l     F .text	0000014c nfs_readlink_reply
+eff98874 l     F .text	0000005c basename
+eff988d0 l     F .text	00000114 rpc_req
+eff989e4 l     F .text	0000005c rpc_lookup_req
+eff98a40 l     F .text	00000090 nfs_umountall_req
+eff98ad0 l     F .text	00000184 nfs_read_reply.isra.0
+eff98c54 l     F .text	000000cc nfs_readlink_req
+eff98d20 l     F .text	000000d0 nfs_mount_req
+eff98df0 l     F .text	000000f0 nfs_read_req
+eff98ee0 l     F .text	00000164 nfs_lookup_req
+eff99044 l     F .text	00000104 nfs_send
+eff99148 l     F .text	00000248 nfs_handler
+eff99390 l     F .text	0000007c nfs_timeout_handler
+f0019928 l       .bss	00000000 .LANCHOR1
+f0019928 l     O .bss	00000004 nfs_server_mount_port
+f001992c l       .bss	00000000 .LANCHOR9
+f001992c l     O .bss	00000004 nfs_server_ip
+f0019930 l       .bss	00000000 .LANCHOR13
+f0019930 l     O .bss	00000004 nfs_filename
+f0019934 l       .bss	00000000 .LANCHOR12
+f0019934 l     O .bss	00000004 nfs_state
+f0019938 l       .bss	00000000 .LANCHOR7
+f0019938 l     O .bss	00000004 filefh3_length
+f001993c l       .bss	00000000 .LANCHOR4
+f001993c l     O .bss	00000020 dirfh
+effb5f8c l       .data	00000000 .LANCHOR11
+effb5f8c l     O .data	00000004 nfs_offset
+f001995c l       .bss	00000000 .LANCHOR0
+f001995c l     O .bss	00000004 rpc_id
+f0019960 l       .bss	00000000 .LANCHOR3
+f0019960 l     O .bss	00000004 fs_mounted
+f0019964 l       .bss	00000000 .LANCHOR14
+f0019964 l     O .bss	00000004 nfs_len
+f0019968 l       .bss	00000000 .LANCHOR2
+f0019968 l     O .bss	00000004 nfs_server_port
+f001996c l       .bss	00000000 .LANCHOR15
+f001996c l     O .bss	00000004 nfs_download_state
+f0019970 l       .bss	00000000 .LANCHOR8
+f0019970 l     O .bss	00000004 nfs_path
+effb5f90 l       .data	00000000 .LANCHOR5
+effb5f90 l     O .data	00000001 supported_nfs_versions
+f0019974 l       .bss	00000000 .LANCHOR17
+f0019974 l     O .bss	00000800 nfs_path_buff
+f001a174 l       .bss	00000000 .LANCHOR16
+f001a174 l     O .bss	00000004 nfs_timeout_count
+f001a178 l       .bss	00000000 .LANCHOR6
+f001a178 l     O .bss	00000040 filefh
+f001a1b8 l       .bss	00000000 .LANCHOR10
+f001a1b8 l     O .bss	00000004 nfs_our_port
+eff9b4cc l       .rodata	00000000 .L160
+eff9b4b0 l       .rodata	00000000 .L178
+00000000 l    df *ABS*	00000000 ping.c
+eff99568 l     F .text	00000038 ping_timeout_handler
+f001a1bc l       .bss	00000000 .LANCHOR0
+f001a1bc l     O .bss	00000002 ping_seq_number
+00000000 l    df *ABS*	00000000 tftp.c
+eff997b4 l     F .text	0000018c tftp_send
+eff99940 l     F .text	00000360 tftp_handler
+eff99ca0 l     F .text	00000098 tftp_timeout_handler
+f0017af4 l       .bss	00000000 .LANCHOR14
+f0017af4 l     O .bss	00000004 time_start
+f001a1c0 l       .bss	00000000 .LANCHOR9
+f001a1c0 l     O .bss	00000004 tftp_prev_block
+f001a1c4 l       .bss	00000000 .LANCHOR12
+f001a1c4 l     O .bss	00000004 timeout_count
+effb5f92 l       .data	00000000 .LANCHOR3
+effb5f92 l     O .data	00000002 tftp_block_size_option
+f001a1c8 l       .bss	00000000 .LANCHOR10
+f001a1c8 l     O .bss	00000004 tftp_block_wrap
+f001a1cc l       .bss	00000000 .LANCHOR15
+f001a1cc l     O .bss	0000000d default_filename
+f001a1dc l       .bss	00000000 .LANCHOR7
+f001a1dc l     O .bss	00000004 tftp_remote_port
+effb5f94 l       .data	00000000 .LANCHOR2
+effb5f94 l     O .data	00000004 timeout_ms
+f001a1e0 l       .bss	00000000 .LANCHOR4
+f001a1e0 l     O .bss	00000004 tftp_cur_block
+f001a1e4 l       .bss	00000000 .LANCHOR5
+f001a1e4 l     O .bss	00000004 tftp_remote_ip
+f001a1e8 l       .bss	00000000 .LANCHOR6
+f001a1e8 l     O .bss	00000004 tftp_our_port
+f001a1ec l       .bss	00000000 .LANCHOR0
+f001a1ec l     O .bss	00000004 tftp_state
+effb5f98 l       .data	00000000 .LANCHOR8
+effb5f98 l     O .data	00000002 tftp_block_size
+f001a1f0 l       .bss	00000000 .LANCHOR1
+f001a1f0 l     O .bss	00000080 tftp_filename
+f001a270 l       .bss	00000000 .LANCHOR11
+f001a270 l     O .bss	00000004 tftp_block_wrap_offset
+effb5f9c l       .data	00000000 .LANCHOR13
+effb5f9c l     O .data	00000004 timeout_count_max
+eff9b69c l       .rodata	00000000 .L4
+00000000 l    df *ABS*	00000000 
+effae844 l     O .reloc	00000000 _GLOBAL_OFFSET_TABLE_
+00000000 l       *UND*	00000000 timer_read_counter
+f001bb60 g     O .bss	00000048 ext_fs
+eff79b54 g     F .text	00000068 genphy_restart_aneg
+eff5dec4 g     F .text	0000049c usb_select_config
+eff799fc g     F .text	00000034 tsec_phy_write
+f001a278 g     O .bss	00000101 console_buffer
+eff607d4 g     F .text	00000158 flash_write
+eff6c9ac  w    F .text	00000004 board_mmc_power_init
+eff400a8 g       .text	00000000 _start_of_vectors
+eff65c00 g     F .text	00000054 fit_image_check_comp
+eff66ba4 g     F .text	00000070 stdio_clone
+eff67fd8 g     F .text	00000094 xyzModem_error
+eff66024 g     F .text	00000248 fit_print_contents
+eff65bac g     F .text	00000054 fit_image_check_type
+eff64380 g     F .text	00000080 boot_get_kbd
+eff88910 g     F .text	00000068 fdt_address_cells
+eff7eaac  w    F .text	00000004 jz_serial_initialize
+eff5ff48 g     F .text	00000230 usb_storage_probe
+eff926c0 g     F .text	00000038 display_options_get_banner
+eff65dbc g     F .text	0000002c fit_conf_get_prop_node_count
+eff4680c g       .text	00000000 strcpy
+eff7a6d0 g     F .text	00000068 phy_find_by_mask
+eff6e5ec g     F .text	000000d0 i2c_set_bus_num
+eff9a0c0 g     F .text	00000044 .hidden __ashldi3
+effb6328 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_i2c
+eff456d0 g     F .text	00000054 dram_init
+eff879a0 g     F .text	00000064 fdt_offset_ptr
+eff62130 g     F .text	000000f8 console_init_r
+eff76214 g     F .text	000002d0 e1000_set_mac_type
+eff46c48 g     F .text	000000dc arch_lmb_reserve
+eff65e34 g     F .text	00000030 fit_conf_get_prop_node
+eff97650 g     F .text	00000048 net_set_arp_handler
+eff7cd24 g     F .text	00000024 pciauto_region_init
+eff7cac8 g     F .text	00000154 pciauto_postscan_setup_bridge
+eff84150 g     F .text	00000030 get_fs
+eff70e94  w    F .text	00000008 cfi_flash_bank_size
+eff43100 g       .text	00000000 __spin_table
+eff83e40 g     F .text	00000230 do_load
+eff795ec g     F .text	00000330 tsec_eth_init
+eff95058 g     F .text	00000048 vscnprintf
+effb5fd4 g     O .data	00000006 net_bcast_ethaddr
+eff85c50 g     F .text	000000d8 ext4fs_open
+eff5d9cc g     F .text	0000002c usb_maxpacket
+eff477c0 g     F .text	0000003c do_bootd
+eff6508c g     F .text	00000060 fit_image_get_data
+eff47188 g     F .text	00000030 __udelay
+eff66f2c g     F .text	000000c4 find_cmd_tbl
+eff5d0e4 g     F .text	00000130 miiphy_speed
+eff742c8 g     F .text	0000000c spi_flash_cmd_write
+eff40004 g       .text	00000000 version_string
+effb66b8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_sleep
+effb0950 g     O .data	00000104 tlb_table
+eff4180c g     F .text	00000070 set_last_law
+eff9a148 g     F .text	00000014 .hidden _restgpr_31_x
+eff5cfdc g     F .text	000000ac miiphy_info
+effb6178 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_date
+eff46b34 g       .text	00000000 wait_ticks
+eff7eaac  w    F .text	00000004 bfin_serial_initialize
+eff95180 g     F .text	00000090 printf
+eff50c88 g     F .text	00000120 mtd_id_parse
+eff95104 g     F .text	00000014 vsprintf
+eff91414 g     F .text	000000bc addrmap_phys_to_virt
+eff64fc8 g     F .text	0000005c fit_image_get_comp
+eff6fcfc g     F .text	00000078 mtd_read_oob
+eff45290 g     F .text	00000090 fsl_serdes_init
+eff92c34  w    F .text	000000d4 __div64_32
+effb5e18 g     O .data	00000010 env_htab
+eff6f864 g     F .text	00000024 idr_find
+eff70e88  w    F .text	0000000c cfi_flash_bank_addr
+effb4510 g     O .data	00000078 nand_manuf_ids
+eff7f540 g     F .text	00000004 spi_release_bus
+eff925b0 g     F .text	0000006c hwalk_r
+eff9820c g     F .text	00000060 copy_filename
+eff45320 g     F .text	00000054 is_serdes_configured
+eff9a128 g     F .text	00000034 .hidden _restgpr_23_x
+eff684d4 g     F .text	00000168 blk_get_device_by_str
+eff87e54 g     F .text	00000064 _fdt_node_end_offset
+eff459bc g     F .text	00000094 interrupt_init_cpu
+eff6e4bc g     F .text	0000007c i2c_get_adapter
+eff66d78 g     F .text	00000040 run_command
+eff8c168 g     F .text	00000164 sha1_finish
+eff87608 g     F .text	000000b4 fat_readdir
+f001a698 g     O .bss	00001444 flash_info
+eff5ccb8 g     F .text	00000058 miiphy_set_current_dev
+eff44c08 g     F .text	00000060 hold_cores_in_reset
+effb6550 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_nm
+eff8222c g     F .text	00000008 ehci_hcd_stop
+eff496dc g     F .text	0000003c set_working_fdt_addr
+eff731d4 g     F .text	000002ac nand_write_skip_bad
+eff48ab0 g     F .text	000001a4 do_eeprom
+eff64d38 g     F .text	00000080 fit_parse_subimage
+eff7c240 g     F .text	000001b8 pci_hose_scan_bus
+eff7d35c g     F .text	000000a4 pci_hose_phys_to_bus
+eff966e8 g     F .text	00000090 eth_get_dev_by_name
+eff739ec g     F .text	000000f4 spi_flash_cmd_erase_ops
+eff88f8c g     F .text	00000040 fdt_getprop_namelen
+eff5bfa4 g     F .text	00000040 do_fixup_by_compat_u32
+eff7f6f0 g     F .text	00000388 spi_xfer
+eff6e09c g     F .text	00000420 fsl_ddr_set_memctl_regs
+eff6a6e4 g     F .text	00000090 blk_list_devices
+eff63764 g     F .text	00000024 get_table_entry
+eff46ae8 g       .text	00000000 invalidate_dcache_range
+eff88d54 g     F .text	00000050 fdt_first_property_offset
+eff5a6e8 g     F .text	0000085c do_bootm_states
+eff7c8a8 g     F .text	00000220 pciauto_prescan_setup_bridge
+eff8316c g     F .text	000000a4 eth_validate_ethaddr_str
+eff92d84 g     F .text	00000078 strim
+eff657b4 g     F .text	0000022c fit_image_verify
+f004bbc0 g     O .bss	00000010 bootp_ids
+eff7eaac  w    F .text	00000004 p3mx_serial_initialize
+eff71ba4 g     F .text	000009c4 flash_get_size
+eff45c84 g     F .text	000000bc print_tlbcam
+f0000064 g     O .bss	00000004 bootp_start
+eff6bbc4 g     F .text	0000005c mmc_getcd
+eff7bd7c g     F .text	00000028 pci_hose_read_config_dword
+eff61f20 g     F .text	00000074 console_assign
+eff896b0 g     F .text	000000d0 fdt_stringlist_get
+eff7eaac  w    F .text	00000004 leon2_serial_initialize
+eff40dd4 g       .text	00000000 dcache_enable
+effb6798 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_ethaddr
+eff956a8 g     F .text	0000009c ustrtoul
+f0000068 g     O .bss	00000004 net_server_ip
+eff95810 g     F .text	000000c0 ustrtoull
+eff893f0 g     F .text	00000050 fdt_parent_offset
+eff912e8 g     F .text	0000006c gunzip
+eff46914 g       .text	00000000 memmove
+eff5b874 g     F .text	00000068 fdt_getprop_u32_default_node
+eff57624 g     F .text	000001e0 hash_command
+eff910f0 g     F .text	000000d4 gzip_parse_header
+eff7eaac  w    F .text	00000004 leon3_serial_initialize
+eff83b8c g     F .text	00000094 fs_opendir
+eff9a108 g     F .text	00000054 .hidden _restgpr_15_x
+effb6598 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_printenv
+eff45b24 g     F .text	0000007c get_clocks
+eff950a0 g     F .text	00000064 snprintf
+eff7eaac  w    F .text	00000004 stm32_serial_initialize
+effb5fc4 g     O .data	00000004 ext4fs_indir3_blkno
+eff86fb0 g     F .text	000000e4 fat_size
+eff6626c g     F .text	00000068 fit_get_node_from_config
+eff66e50 g     F .text	00000088 do_run
+eff8755c g     F .text	000000ac fat_opendir
+f000006c g     O .bss	00000006 net_null_ethaddr
+eff7eaac  w    F .text	00000004 amirix_serial_initialize
+effb5fa8  w    O .data	00000001 board_hwconfig
+eff7eaac  w    F .text	00000004 marvell_serial_initialize
+eff58330 g     F .text	000000ac get_local_var
+eff88f34 g     F .text	00000058 fdt_get_property
+eff89284 g     F .text	00000048 fdt_path_offset
+eff88490 g     F .text	0000006c fdt_setprop
+eff6aec4 g     F .text	00000048 mmc_mode_name
+eff95660 g     F .text	00000048 simple_strtol
+eff95b64 g     F .text	000000cc arp_raw_request
+eff48d5c g     F .text	000001c0 do_bootelf
+effabf00 g       .reloc	00000000 _GOT2_TABLE_
+eff876bc g     F .text	00000034 fat_closedir
+effb62c8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_fdt
+f0000074 g     O .bss	00000006 net_ethaddr
+eff66cf4 g     F .text	00000084 stdio_add_devices
+effb6388 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_interrupts
+eff6e7a8 g     F .text	0000006c i2c_write
+eff92d08 g     F .text	00000034 hang
+eff638b0 g     F .text	00000198 image_print_contents
+effb4588 g     O .data	00000d70 nand_flash_ids
+eff982bc g     F .text	00000048 ip_to_string
+eff7eaac  w    F .text	00000004 cpci750_serial_initialize
+f0000034 g     O .bss	00000004 part_offset
+eff823e4 g     F .text	000000cc env_import
+eff63b5c g     F .text	00000038 genimg_get_comp_id
+eff41360 g     F .text	0000004c arch_cpu_init
+eff4711c g     F .text	0000006c usec2ticks
+eff96dc8 g     F .text	00000050 eth_halt
+eff41ce8 g     F .text	000000e0 init_laws
+effb63a0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_irqinfo
+f0000060 g     O .bss	00000004 errno
+eff4179c g     F .text	00000070 set_next_law
+eff9a15c g       .text	00000000 _etext
+eff8c2cc g     F .text	0000005c sha1_csum_wd
+eff6863c g     F .text	000003cc blk_get_device_part_str
+eff5cf5c g     F .text	00000080 miiphy_listdev
+eff9597c g     F .text	00000030 trailing_strtol
+eff40ebc g       .text	00000000 relocate_code
+f0000024 g     O .bss	00000001 usb_started
+eff65c54 g     F .text	0000007c fit_check_format
+f0000028 g     O .bss	00000004 monitor_flash_len
+eff8f9b8 g     F .text	00001720 inflate
+eff91354 g     F .text	000000c0 addrmap_virt_to_phys
+eff45db0 g     F .text	00000048 find_free_tlbcam
+eff5bdcc g     F .text	000000d8 do_fixup_by_prop
+eff43000 g       .text	00000000 __second_half_boot_page
+eff4156c  w    F .text	00000004 lbc_sdram_init
+eff7a334  w    F .text	00000088 get_phy_id
+eff87df4 g     F .text	00000060 fdt_move
+eff6da00 g     F .text	00000100 rtc_to_tm
+eff45768 g     F .text	0000015c l2cache_init
+eff40e80 g       .text	00000000 in32
+eff6934c  w    F .text	000000dc sata_initialize
+eff899d0 g     F .text	00000078 crc16_ccitt
+eff910d8 g     F .text	00000010 gzalloc
+f000002c g     O .bss	00000004 save_addr
+eff40d4c g       .text	00000000 flush_icache
+eff952d4 g     F .text	00000064 str2off
+eff7c228  w    F .text	00000018 pci_print_dev
+effb64d8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_mtdparts
+eff6e6f0 g     F .text	0000004c i2c_probe
+eff5d088 g     F .text	0000005c miiphy_is_1000base_x
+eff7a79c g     F .text	0000006c phy_connect
+effb6010 g     O .u_boot_list	00000018 _u_boot_list_2_blk_driver_2_usb
+eff7d5ac g     F .text	000000a0 fsl_is_pci_agent
+eff91960 g     F .text	00000470 hsearch_r
+eff8ae90 g     F .text	000000dc qsort
+eff63ab4 g     F .text	00000038 genimg_get_os_id
+eff85f08 g     F .text	0000005c ext4fs_devread
+eff42144 g       .text	00000000 __spin_table_addr
+f000007c g     O .bss	00000004 net_boot_file_size
+eff76774 g     F .text	000000cc fill_rx
+eff9a118 g     F .text	00000044 .hidden _restgpr_19_x
+eff97c14 g     F .text	00000230 net_process_received_packet
+eff73480 g     F .text	00000240 nand_read_skip_bad
+eff47208 g     F .text	00000030 pci_init_board
+eff4760c  w    F .text	00000030 do_go_exec
+eff45fb4 g     F .text	00000040 find_tlb_idx
+eff897dc g     F .text	0000008c fdt_node_offset_by_compatible
+eff5bca4 g     F .text	000000d4 fdt_chosen
+eff82df0 g     F .text	000000d8 env_callback_init
+eff8e6e4 g     F .text	00000070 sha256_starts
+eff7e3ac  w    F .text	0000004c board_serdes_name
+eff92d3c g     F .text	00000048 skip_spaces
+eff7eab0 g     F .text	0000003c serial_register
+eff69198 g     F .text	00000074 ata_id_n_sectors
+eff44c00 g     F .text	00000008 get_my_id
+eff48f1c g     F .text	000002ec do_bootvx
+effb5fa4 g     O .data	00000004 num_tlb_entries
+eff46494 g     F .text	00000028 CritcalInputException
+eff61ad4 g     F .text	00000050 getc
+f000001c g     O .bss	00000004 mem_malloc_end
+eff7f1f0 g     F .text	00000038 ns16550_serial_initialize
+effb6670 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_setexpr
+effb60d0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_bootvx
+eff7eaac  w    F .text	00000004 asc_serial_initialize
+eff44fb4 g     F .text	00000030 get_spin_phys_addr
+eff40e78 g       .text	00000000 in16r
+eff4691c g       .text	00000000 memcpy
+eff5f034 g     F .text	00000054 usb_hub_probe
+eff64eb4 g     F .text	0000005c fit_image_get_os
+eff492e8 g     F .text	00000030 do_fat_fsload
+effb6160 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_crc32
+eff47ab4 g     F .text	00000084 bootm_maybe_autostart
+eff659e0 g     F .text	0000010c fit_all_image_verify
+eff6a9c8 g     F .text	0000007c blk_read_devnum
+eff63788 g     F .text	00000048 get_table_entry_name
+eff64e60 g     F .text	00000054 fit_image_get_node
+eff60690 g     F .text	000000d4 flash_protect
+eff89440 g     F .text	000000c0 fdt_node_offset_by_prop_value
+eff61ec8 g     F .text	00000058 search_device
+eff63c78 g     F .text	00000010 genimg_has_config
+eff74274 g     F .text	00000010 spi_flash_cmd_read
+eff977d0 g     F .text	0000013c net_start_again
+effb62b0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_fatsize
+eff79a30 g     F .text	00000070 tsec_local_mdio_read
+eff82234 g     F .text	00000064 env_get_yesno
+eff50f54 g     F .text	00000664 mtdparts_init
+eff46f40 g     F .text	0000005c flush_cache
+eff41750 g     F .text	0000004c disable_law
+eff5c630 g     F .text	00000288 fdt_translate_address
+eff61ca8 g     F .text	00000054 puts
+eff89894 g     F .text	0000013c utf16_to_utf8
+eff9a144 g     F .text	00000018 .hidden _restgpr_30_x
+eff9a110 g     F .text	0000004c .hidden _restgpr_17_x
+eff884fc g     F .text	00000078 fdt_delprop
+effb5ff8 g     O .u_boot_list	00000018 _u_boot_list_2_blk_driver_2_sata
+eff66c14 g     F .text	00000070 stdio_register_dev
+eff80524 g     F .text	0000000c has_erratum_a008751
+eff6bc20 g     F .text	000000b4 sd_select_bus_width
+effb5fbc g     O .data	00000004 ext4fs_indir1_blkno
+eff97078 g     F .text	0000005c eth_env_set_enetaddr_by_index
+eff5bee4 g     F .text	000000c0 do_fixup_by_compat
+effb6370 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_imxtract
+effb6268 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_fatinfo
+eff7eaac  w    F .text	00000004 sh_serial_initialize
+eff7eaac  w    F .text	00000004 oc_serial_initialize
+eff69180 g     F .text	00000018 part_get_info_dos
+f0000080 g     O .bss	00000004 net_ping_ip
+effb6250 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_false
+eff8ea7c g     F .text	000004f8 inflate_fast
+eff410cc g       .text	00000000 unlock_ram_in_cache
+effb63d0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_loadb
+eff8ea10 g     F .text	0000005c sha256_csum_wd
+eff876f4 g     F .text	00000248 fs_devread
+eff8277c g     F .text	000000b4 env_save
+eff62648 g     F .text	00000654 .hidden malloc
+eff5d3d0 g     F .text	00000070 usb_stop
+eff46b80 g     F .text	00000028 trap_reloc
+eff9a140 g     F .text	0000001c .hidden _restgpr_29_x
+effb6400 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_loadx
+eff7f3f4 g     F .text	00000004 spi_init
+eff5e4bc g     F .text	00000154 usb_init
+eff642e0 g     F .text	000000a0 boot_get_cmdline
+eff67ecc g     F .text	00000058 xyzModem_stream_close
+eff6cf40 g     F .text	000000d8 print_mmc_devices
+eff63aec g     F .text	00000038 genimg_get_arch_id
+eff975d4 g     F .text	00000048 net_set_udp_handler
+eff95054 g     F .text	00000004 vsnprintf
+eff413f8 g     F .text	00000030 cpu_eth_init
+eff47020 g     F .text	00000054 interrupt_init
+eff67038 g     F .text	00000070 cmd_usage
+eff6cf04 g     F .text	00000008 mmc_get_blk_desc
+eff5e360 g     F .text	00000104 usb_setup_device
+eff7f544 g     F .text	00000020 spi_cs_is_valid
+eff92be4 g     F .text	00000050 crc32_wd_buf
+eff5cea8 g     F .text	00000060 miiphy_read
+eff6dcb8 g     F .text	00000134 rtc_set
+f0000038 g     O .bss	00000004 ext4fs_indir1_size
+f0000084 g     O .bss	00000004 bootp_timeout
+eff84834 g     F .text	0000004c ext4fs_bg_get_inode_table_id
+effb66a0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_showvar
+eff58884 g     F .text	00000100 parse_string_outer
+eff6f9b8 g     F .text	0000007c get_mtd_device_nm
+eff7a880 g     F .text	0000002c phy_config
+effb60b8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_bootp
+eff40d68 g       .text	00000000 invalidate_dcache
+eff70ee4 g     F .text	00000208 flash_erase
+eff88b80 g     F .text	000000f8 fdt_subnode_offset_namelen
+eff40e2c g       .text	00000000 in8
+eff44ca8 g     F .text	00000094 cpu_disable
+eff40e88 g       .text	00000000 in32r
+eff7bdcc g     F .text	00000028 pci_hose_write_config_word
+eff7f318 g     F .text	00000024 NS16550_putc
+eff6934c g     F .text	000000dc __sata_initialize
+eff7ff08 g     F .text	0000014c has_dual_phy
+eff5ce64 g     F .text	00000044 miiphy_get_current_dev
+eff7eaac  w    F .text	00000004 mxs_auart_initialize
+00000a50 g       *ABS*	00000000 __got2_entries
+eff7d64c g     F .text	00000054 fsl_setup_hose
+effb6298 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_fatls
+f0000088 g     O .bss	00000004 bootp_num_ids
+eff8459c g     F .text	000000a4 ext4fs_ls
+eff45ff4 g     F .text	000000a8 init_addr_map
+eff56f6c g     F .text	00000058 env_get_hex
+eff893a4 g     F .text	0000004c fdt_node_depth
+eff41c64 g     F .text	00000084 disable_non_ddr_laws
+f0017a48 g     O .bss	00000020 net_hostname
+eff8add0 g     F .text	000000c0 string_to_ip
+eff41428 g     F .text	00000144 ft_fixup_num_cores
+eff463c8 g     F .text	000000cc show_regs
+eff57104  w    F .text	00000004 show_boot_progress
+effabf00 g       .reloc	00000000 _erotext
+eff966b4 g     F .text	00000034 eth_set_dev
+eff64db8 g     F .text	00000044 fit_get_desc
+eff8261c g     F .text	000000ac env_get_char
+eff5343c g     F .text	000000c4 pci_header_show
+effb67f8 g     O .u_boot_list	0000002c _u_boot_list_2_i2c_2_fsl_0
+eff7f25c g     F .text	00000014 ns16550_calc_divisor
+eff48920  w    F .text	00000008 eeprom_write_enable
+eff63808 g     F .text	00000038 genimg_get_arch_name
+eff64f10 g     F .text	0000005c fit_image_get_arch
+effb6508 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_nand
+eff668bc g     F .text	0000017c boot_get_fdt_fit
+eff7ed0c g     F .text	0000002c serial_setbrg
+eff416e0 g     F .text	00000070 set_law
+eff56dd8 g     F .text	000000ec env_get_f
+eff88b54 g     F .text	0000002c fdt_num_mem_rsv
+f000008c g     O .bss	00000004 net_rx_packet_len
+eff9180c g     F .text	000000c4 hcreate_r
+eff6ae60 g     F .text	0000005c mmc_getwp
+eff69e04 g     F .text	00000008 reset_sata
+eff7bca8 g     F .text	00000084 phy_marvell_init
+eff88df4 g     F .text	00000070 fdt_get_property_by_offset
+eff4568c  w    F .text	00000010 get_tbclk
+eff5c218 g     F .text	000001c4 fdt_fixup_ethernet
+effb5fc0 g     O .data	00000004 ext4fs_indir2_blkno
+eff96b08 g     F .text	0000009c eth_register
+eff656a0 g     F .text	0000000c fit_get_end
+eff72568 g     F .text	00000034 flash_set_verbose
+eff5710c g     F .text	00000040 main_loop
+eff6af0c g     F .text	00000030 mmc_send_cmd
+eff7bfe0 g     F .text	00000064 pci_read_config_dword
+eff96678 g     F .text	0000003c eth_set_current_to_next
+eff44d3c g     F .text	00000074 is_core_disabled
+eff41200  w    F .text	00000074 cpu_mask
+effb6358 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_imls
+eff6a940 g     F .text	00000088 blk_get_devnum_by_typename
+eff75634 g     F .text	00000064 e1000_raise_ee_clk
+eff832f8 g     F .text	00000284 env_flags_validate
+eff7cf94 g     F .text	00000114 pci_class_str
+eff5d440 g     F .text	00000044 usb_disable_asynch
+eff7ebfc g     F .text	000000d8 serial_initialize
+eff40e40 g       .text	00000000 out16
+eff73ae0 g     F .text	00000108 spi_flash_cmd_write_ops
+effb6760 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_version
+effb6190 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_echo
+eff40e70 g       .text	00000000 in16
+eff63c88 g     F .text	0000033c boot_get_ramdisk
+eff5c1d0 g     F .text	00000048 fdt_fixup_memory
+eff40e90 g       .text	00000000 write_tlb
+eff8157c g     F .text	00000044 usb_lowlevel_stop
+eff66afc g     F .text	00000034 stdio_get_list
+f000000c g     O .bss	00000004 current_mtd_dev
+eff65b40 g     F .text	0000006c fit_image_check_arch
+eff45950 g     F .text	0000006c cpu_init_early_f
+eff7d198 g     F .text	000000a4 pci_hose_bus_to_phys
+effb6340 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_iminfo
+effb61c0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_eeprom
+effb61d8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_env
+eff5d9f8 g     F .text	000000a8 usb_clear_halt
+eff61b24 g     F .text	00000050 ftstc
+eff682d4 g     F .text	00000114 part_print
+eff93aec g     F .text	000000ac strncasecmp
+f004bfe0 g       .bss	00000000 __bss_end
+effb5fb0 g     O .data	00000004 load_addr
+eff633e4 g     F .text	00000068 image_check_hcrc
+f000003c g     O .bss	00000004 ext4fs_indir2_block
+eff7259c g     F .text	000000ac flash_init
+eff7d298 g     F .text	000000c4 __pci_hose_phys_to_bus
+eff5cb58 g     F .text	000000ac mdio_register
+eff7a098 g     F .text	000001e0 genphy_parse_link
+eff87d78 g     F .text	0000007c _fdt_find_string
+f0000090 g     O .bss	00000004 eth_current
+eff82298 g     F .text	00000050 env_get_default
+eff5d930 g     F .text	0000009c usb_bulk_msg
+eff7c440 g     F .text	00000064 pci_hose_find_cap_start
+f0000040 g     O .bss	00000004 ext4fs_indir3_block
+eff6a8d8 g     F .text	00000068 blk_dselect_hwpart
+eff50da8 g     F .text	000001ac find_dev_and_part
+effb5fda g     O .data	00000002 net_native_vlan
+eff683e8 g     F .text	00000088 part_get_info
+eff7d6a0 g     F .text	00000998 fsl_pci_init
+eff967bc g     F .text	0000028c eth_write_hwaddr
+eff5a41c g     F .text	0000003c board_init_r
+eff7f688 g     F .text	00000024 spi_cs_activate
+eff5a484 g     F .text	000000d8 bootm_find_images
+effb6780 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_bootfile
+eff583dc g     F .text	000001d0 set_local_var
+eff470c4 g     F .text	00000038 get_timer
+eff959ac g     F .text	00000078 strmhz
+effb5fb8 g     O .data	00000004 env_ptr
+eff7a738 g     F .text	00000064 phy_connect_dev
+eff67f24 g     F .text	000000b4 xyzModem_stream_terminate
+eff5d214 g     F .text	00000158 miiphy_duplex
+eff7eaac  w    F .text	00000004 arm_dcc_initialize
+eff46704 g     F .text	00000058 UnknownException
+eff69428  w    F .text	00000050 __sata_stop
+eff66b30 g     F .text	00000074 stdio_get_by_name
+eff79bbc g     F .text	00000260 genphy_config_aneg
+eff69b44 g     F .text	00000058 sata_read
+eff59820 g     F .text	00000058 parse_file_outer
+eff45374  w    F .text	00000004 board_reset
+f0017aac g     O .bss	00000020 net_nis_domain
+effb61f0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_erase
+eff799b0 g     F .text	0000004c tsec_local_mdio_write
+eff93cdc g     F .text	0000002c strnlen
+eff736c0 g     F .text	00000094 spi_flash_probe
+effb6238 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_ext2ls
+eff89030 g     F .text	00000058 fdt_getprop
+eff826c8 g     F .text	000000b4 env_load
+eff5a458  w    F .text	0000002c show_board_info
+eff6ab2c g     F .text	00000214 fdt_fixup_crypto_node
+eff6bcd4 g     F .text	0000003c mmc_set_clock
+eff7a8ac g     F .text	00000040 phy_shutdown
+eff40d84 g       .text	00000000 icache_enable
+eff6f888 g     F .text	00000068 idr_get_next
+f0000044 g     O .bss	00000004 ext4fs_symlinknest
+eff728e4 g     F .text	00000248 cfi_mtd_init
+eff66840 g     F .text	0000007c boot_get_setup_fit
+eff86d3c g     F .text	000000d8 fat_set_blk_dev
+eff87094 g     F .text	00000470 file_fat_read_at
+eff839fc g     F .text	0000005c fs_ls
+eff68470 g     F .text	00000064 part_get_info_whole_disk
+eff918d0 g     F .text	00000090 hdestroy_r
+eff5ba40 g     F .text	00000098 fdt_root
+eff84180 g     F .text	00000054 ext4fs_free_node
+eff66db8 g     F .text	00000098 run_command_list
+eff7eaac  w    F .text	00000004 bmw_serial_initialize
+eff492b8 g     F .text	00000030 do_fat_size
+eff93c84 g     F .text	00000058 strrchr
+effb43f4 g     O .data	00000020 step_string_tbl
+eff4bef8  w    F .text	00000004 i2c_init_board
+eff95338 g     F .text	00000060 str2long
+f0000094 g     O .bss	00000004 arp_wait_timer_start
+eff62c9c g     F .text	000000f8 .hidden calloc
+eff6dea4 g     F .text	0000019c print_ddr_info
+eff46ab8 g       .text	00000000 flush_dcache_range
+eff7eaac  w    F .text	00000004 arc_serial_initialize
+eff59e7c  w    F .text	00000008 dram_init_banksize
+eff7d0c0 g     F .text	000000d8 __pci_hose_bus_to_phys
+eff7eaac  w    F .text	00000004 mcf_serial_initialize
+eff87eb8 g     F .text	00000074 fdt_strerror
+eff471b8 g     F .text	00000014 timer_init
+eff89594 g     F .text	0000009c fdt_stringlist_contains
+eff44fe4 g     F .text	0000004c cpu_mp_lmb_reserve
+eff45640 g     F .text	0000004c do_reset
+effb6520 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_nboot
+eff6e5e4 g     F .text	00000008 i2c_get_bus_num
+eff89de8 g     F .text	00000004 lmb_add
+eff710ec g     F .text	00000288 flash_print_info
+eff92888 g     F .text	000001c0 print_buffer
+eff7eaac  w    F .text	00000004 lh7a40x_serial_initialize
+effb6460 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_mdio
+eff81f88 g     F .text	000002a4 ehci_hcd_init
+eff69c98 g     F .text	0000016c init_sata
+eff637d0 g     F .text	00000038 genimg_get_os_name
+f0000098 g     O .bss	00000004 net_gateway
+eff7eaac  w    F .text	00000004 evb64260_serial_initialize
+eff5e7e0 g     F .text	00000064 usb_get_port_status
+eff6e814 g     F .text	00000094 i2c_set_bus_speed
+eff5c96c g     F .text	000000e0 fdt_verify_alias_address
+eff6ddec g     F .text	00000030 rtc_reset
+eff9a070 g     F .text	00000044 .hidden __lshrdi3
+eff61b74 g     F .text	00000050 tstc
+eff40c00 g       .text	00000000 transfer_to_handler
+eff63840 g     F .text	00000038 genimg_get_type_name
+eff89868 g     F .text	0000002c utf16_strnlen
+eff45934 g     F .text	00000018 arch_preboot_os
+eff85428 g     F .text	000000b8 ext4fs_reinit_global
+eff44f64 g     F .text	00000050 determine_mp_bootpg
+effb63e8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_loads
+eff9a894 g     O .rodata	00000722 default_environment
+eff8f6ac g     F .text	0000030c adler32
+eff95264 g     F .text	00000070 simple_itoa
+effb5d54 g     O .data	00000030 eserial1_device
+eff46850 g       .text	00000000 strcat
+f000009c g     O .bss	00000004 net_busy_flag
+eff472d0 g     F .text	00000118 board_eth_init
+eff8ea74 g     F .text	00000008 zcfree
+eff66ed8 g     F .text	00000028 cli_loop
+f00000a0 g     O .bss	00000004 net_restart_wrap
+f00000a4 g     O .bss	00000004 net_boot_file_expected_size_in_blocks
+eff93e7c g     F .text	00000028 rand_r
+eff7eaac  w    F .text	00000004 lpc32xx_serial_initialize
+eff803fc g     F .text	00000128 has_erratum_a004477
+effb6490 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_mm
+eff95210 g     F .text	00000054 vprintf
+effb6208 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_exit
+eff95cd0 g     F .text	000000a0 arp_timeout_check
+eff63c28 g     F .text	00000050 genimg_get_format
+eff93a50 g     F .text	0000009c slre_match
+eff6a5bc g     F .text	000000b8 blk_list_part
+eff72c5c g     F .text	00000394 nand_erase_opts
+eff65130 g     F .text	00000060 fit_image_hash_get_value
+eff5c8b8 g     F .text	000000b4 fdt_node_offset_by_compat_reg
+eff6a880 g     F .text	00000058 blk_get_devnum_by_type
+eff6184c g     F .text	00000030 hwconfig_f
+eff87b60 g     F .text	00000058 _fdt_check_prop_offset
+eff7e8e0 g     F .text	00000064 pci_setup_indirect
+eff4aa4c g     F .text	000000ac flash_sect_erase
+eff6cc7c g     F .text	00000154 mmc_init
+eff63878 g     F .text	00000038 genimg_get_comp_name
+effb6538 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_nfs
+eff883b8 g     F .text	000000d8 fdt_setprop_placeholder
+eff9a124 g     F .text	00000038 .hidden _restgpr_22_x
+effb62e0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_flinfo
+eff7eaac  w    F .text	00000004 max3100_serial_initialize
+eff96ebc g     F .text	0000007c eth_parse_enetaddr
+eff4187c g     F .text	000000c4 print_laws
+eff73798 g     F .text	00000080 spi_flash_read_common
+eff471cc g     F .text	00000008 board_early_init_f
+eff6ffe8 g     F .text	00000084 mtd_block_markbad
+eff61944 g     F .text	00000070 hwconfig_subarg_cmp_f
+eff45ba0 g     F .text	00000008 get_bus_freq
+eff44c68 g     F .text	00000040 cpu_reset
+eff7ee68 g     F .text	0000002c serial_tstc
+eff66ff0 g     F .text	00000048 find_cmd
+eff65e64 g     F .text	000001c0 fit_conf_print
+eff5a55c g     F .text	00000154 bootm_decomp_image
+eff88c78 g     F .text	00000050 fdt_subnode_offset
+effb6310 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_help
+eff476c0 g     F .text	00000100 do_bootm
+eff9a134 g     F .text	00000028 .hidden _restgpr_26_x
+eff7eaac  w    F .text	00000004 mpc85xx_serial_initialize
+eff91ee4 g     F .text	000002a4 hexport_r
+eff92188 g     F .text	00000428 himport_r
+eff48d00 g     F .text	0000005c valid_elf_image
+eff7eaac  w    F .text	00000004 imx_serial_initialize
+eff656ac g     F .text	00000108 calculate_hash
+eff489fc g     F .text	000000b4 eeprom_write
+effb6478 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_mii
+effb5d84 g     O .data	00000030 eserial2_device
+eff46668 g     F .text	00000038 AlignmentException
+eff6de9c g     F .text	00000008 fsl_ddr_get_intl3r
+eff6c8fc g     F .text	000000b0 mmc_dump_capabilities
+eff9710c g     F .text	00000054 eth_mac_skip
+eff7f270 g     F .text	00000048 NS16550_init
+eff84070 g     F .text	00000094 do_ls
+eff47ef0 g     F .text	000001c0 source
+eff9a13c g     F .text	00000020 .hidden _restgpr_28_x
+eff6f8f0 g     F .text	00000044 idr_alloc
+eff46a70 g       .text	00000000 memchr
+eff97250 g     F .text	000000a0 eth_try_another
+eff45df8 g     F .text	0000011c set_tlb
+eff95ac8 g     F .text	00000038 ip_checksum_ok
+eff5bd78 g     F .text	00000054 do_fixup_by_path
+eff64dfc g     F .text	00000064 fit_get_timestamp
+eff9a130 g     F .text	0000002c .hidden _restgpr_25_x
+eff79e1c g     F .text	00000114 genphy_config
+eff8c030 g     F .text	0000004c sha1_starts
+effb64f0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_mw
+eff92b84 g     F .text	00000034 crc32
+eff911c4 g     F .text	00000124 zunzip
+f001badc g     O .bss	00000080 mtd_table
+eff6c9b0 g     F .text	000002cc mmc_start_init
+eff88978 g     F .text	00000064 fdt_size_cells
+effb5fac  w    O .data	00000001 cpu_hwconfig
+eff9a12c g     F .text	00000030 .hidden _restgpr_24_x
+f00000a8 g     O .bss	00000004 arp_wait_tx_packet_size
+eff46aa0 g       .text	00000000 ppcDcbi
+eff958d0 g     F .text	000000ac trailing_strtoln
+f00000ac g     O .bss	00000006 net_server_ethaddr
+f00000b4 g     O .bss	00000004 net_state
+eff6344c g     F .text	00000050 image_check_dcrc
+f00000b8 g     O .bss	00000004 arp_wait_try
+eff892cc g     F .text	000000d8 fdt_supernode_atdepth_offset
+eff45a54 g     F .text	00000004 irq_free_handler
+eff40000 g       .text	00000000 _start
+eff64754 g     F .text	0000038c boot_get_fdt
+eff7eaac  w    F .text	00000004 bfin_jtag_initialize
+f001a380 g     O .bss	00000208 images
+eff93d9c g     F .text	00000088 strstr
+f00000bc g     O .bss	00000004 net_rx_packet
+eff45d40 g     F .text	00000070 init_used_tlb_cams
+eff46218 g     F .text	000000bc setup_ddr_tlbs_phys
+eff604c0 g     F .text	000001d0 usb_stor_scan
+eff650ec g     F .text	00000044 fit_image_hash_get_algo
+eff45bd4  w    F .text	00000064 init_tlbs
+eff6aac0 g     F .text	0000006c blk_select_hwpart_devnum
+eff7c3f8 g     F .text	00000048 pci_init
+f0017a68 g     O .bss	00000040 net_root_path
+eff730cc g     F .text	00000108 nand_verify
+f004bbd0 g     O .bss	00000010 net_rx_packets
+eff87d0c g     F .text	0000006c fdt_next_subnode
+eff7eaac  w    F .text	00000004 cogent_serial_initialize
+eff822e8 g     F .text	000000b0 set_default_env
+eff45030 g     F .text	00000260 setup_mp
+eff80220 g     F .text	0000004c has_erratum_a007798
+eff6e8dc g     F .text	0000003c i2c_reg_read
+eff60c00 g     F .text	000009c8 cli_readline_into_buffer
+eff7eaac  w    F .text	00000004 clps7111_serial_initialize
+eff5de5c g     F .text	00000060 usb_free_device
+eff7ee94 g     F .text	00000030 serial_putc
+eff64ae0 g     F .text	0000015c image_setup_libfdt
+eff7ce2c g     F .text	00000168 pciauto_config_init
+eff73be8  w    F .text	0000002c spi_flash_copy_mmap
+eff46ab0 g       .text	00000000 ppcSync
+eff83b08 g     F .text	00000084 fs_read
+effb6900 g       .bootpg	00000000 __init_begin
+eff80054 g     F .text	00000130 has_erratum_a006261
+eff45724 g     F .text	00000044 cpu_init_f
+eff5daa0 g     F .text	00000090 usb_get_configuration_len
+eff598e0 g     F .text	00000064 bootdelay_process
+eff78998 g     F .text	00000058 e1000_get_bus_type
+eff91dd0 g     F .text	00000114 hdelete_r
+eff622a4 g     F .text	00000050 mem_malloc_init
+eff458c4 g     F .text	00000070 cpu_init_r
+eff83954 g     F .text	000000a8 fs_set_blk_dev_with_part
+eff7f1c0  w    F .text	00000030 default_serial_console
+eff7bf7c g     F .text	00000064 pci_read_config_word
+eff759e8 g     F .text	00000150 e1000_acquire_eeprom
+eff93c18 g     F .text	00000040 strncmp
+eff926f8 g     F .text	0000004c display_options
+eff5d484 g     F .text	000000ec usb_control_msg
+eff95d70 g     F .text	000001f4 arp_receive
+eff84104 g     F .text	0000004c file_exists
+eff97e44 g     F .text	0000005c net_eth_hdr_size
+eff97744 g     F .text	0000008c net_init
+effb66d0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_source
+eff71b44  w    F .text	00000060 flash_cmd_reset
+eff5cf08 g     F .text	00000054 miiphy_write
+eff83210 g     F .text	000000e8 env_flags_init
+effb6748 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_usbboot
+eff764e4 g     F .text	00000290 e1000_reset_hw
+eff7a5e8 g     F .text	000000e8 phy_reset
+eff56ec4 g     F .text	000000a8 env_get
+effb5fcc g     O .data	00000004 current
+eff6806c g     F .text	000001f8 dev_print
+eff6f934 g     F .text	00000038 __mtd_next_device
+eff95c30 g     F .text	000000a0 arp_request
+eff4ad20 g     F .text	000000dc flash_sect_protect
+eff75698 g     F .text	00000064 e1000_lower_ee_clk
+eff46828 g       .text	00000000 strncpy
+eff93e24 g     F .text	00000058 udelay
+eff6cdd0 g     F .text	0000000c mmc_set_dsr
+eff5b508 g     F .text	0000007c boot_selected_os
+eff5a6b0 g     F .text	00000038 bootm_disable_interrupts
+eff471d4 g     F .text	00000034 checkboard
+f0000020 g     O .bss	00000004 mem_malloc_start
+eff5bfe4 g     F .text	000001ec fdt_fixup_memory_banks
+eff93b98 g     F .text	00000030 strcasecmp
+eff61cfc g     F .text	00000078 ctrlc
+eff9701c g     F .text	0000005c eth_env_get_enetaddr_by_index
+eff65024 g     F .text	00000034 fit_image_get_load
+eff96ba4 g     F .text	00000194 eth_initialize
+eff44db0 g     F .text	000000c8 cpu_status
+effb6118 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_coninfo
+eff62d94 g     F .text	00000464 .hidden realloc
+eff46f9c g     F .text	00000060 search_exception_table
+eff89dec g     F .text	000001b4 lmb_free
+eff6725c g     F .text	0000007c cmd_get_data_size
+eff7e2b0 g     F .text	000000fc fsl_configure_pcie
+eff5e62c g     F .text	00000078 usb_find_usb2_hub_address_port
+eff4a8b0 g     F .text	000000bc flash_sect_roundb
+eff45ba8 g     F .text	00000008 get_ddr_freq
+eff5e888 g     F .text	000001f8 usb_hub_port_connect_change
+eff97ea0 g     F .text	00000090 net_set_ether
+eff5db64 g     F .text	000000d8 usb_set_interface
+eff953e4 g     F .text	00000068 panic
+eff59f10  w    F .text	0000000c board_get_usable_ram_top
+eff82fdc g     F .text	00000068 env_flags_parse_vartype
+eff9a114 g     F .text	00000048 .hidden _restgpr_18_x
+effb5fa0 g     O .data	00000004 num_law_entries
+eff8253c g     F .text	0000004c env_relocate
+eff63714 g     F .text	00000050 genimg_print_time
+effb6610 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_run
+eff6faa0 g     F .text	0000002c put_mtd_device
+eff7eb94 g     F .text	00000068 serial_assign
+eff955c8 g     F .text	00000098 strict_strtoul
+eff7a808 g     F .text	0000003c phy_startup
+eff69e0c g     F .text	00000698 scan_sata
+eff8f468 g     F .text	00000084 inflateReset
+eff46a40 g       .text	00000000 memcmp
+eff41940 g     F .text	00000324 set_ddr_laws
+effb6688 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_sf
+eff854e0 g     F .text	00000078 ext4fs_close
+eff636cc g     F .text	00000048 genimg_print_size
+eff96f38 g     F .text	0000007c eth_env_get_enetaddr
+eff4594c g     F .text	00000004 cpu_secondary_init_r
+eff7e134 g     F .text	0000017c fsl_pci_init_port
+eff6fb9c g     F .text	000000bc mtd_read
+eff622f4 g     F .text	000000d8 .hidden malloc_trim
+eff44e78 g     F .text	000000ec cpu_release
+eff876f0 g     F .text	00000004 fat_close
+eff8916c g     F .text	00000118 fdt_path_offset_namelen
+eff6fe0c g     F .text	00000170 add_mtd_device
+eff55720 g     F .text	00000074 usb_show_tree
+eff88da4 g     F .text	00000050 fdt_next_property_offset
+effb6900 g       .bootpg	00000000 __init_end
+eff86f38 g     F .text	00000078 fat_exists
+eff914d0 g     F .text	00000054 addrmap_set_entry
+eff44378 g     F .text	000000d4 fdt_add_enet_stashing
+eff8026c g     F .text	00000134 has_erratum_a007792
+eff803a0 g     F .text	0000005c has_erratum_a005697
+eff824b0 g     F .text	0000008c env_export
+eff7c1a4 g     F .text	00000084 pci_find_devices
+eff93bc8 g     F .text	00000050 strncat
+eff88278 g     F .text	000000a4 fdt_add_mem_rsv
+eff469b8 g       .text	00000000 backwards_memcpy
+eff40d4c g       .text	00000000 invalidate_icache
+effb5fd0 g     O .data	00000002 net_our_vlan
+eff7eaac  w    F .text	00000004 ml2_serial_initialize
+effb60e8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_chpart
+eff66cb4 g     F .text	00000040 stdio_init_tables
+eff92744 g     F .text	00000144 print_size
+eff88e64 g     F .text	000000d0 fdt_get_property_namelen
+eff63388 g     F .text	00000008 initf_malloc
+effb6628 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_sata
+eff9a2bc g     O .rodata	00000100 _ctype
+eff89500 g     F .text	00000094 fdt_node_offset_by_phandle
+eff6ae58  w    F .text	00000008 board_mmc_getwp
+eff53500 g     F .text	00000050 pciinfo_header
+effb6580 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_ping
+eff644e4 g     F .text	000000b8 boot_fdt_add_mem_rsv_regions
+effb6718 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_true
+eff63b24 g     F .text	00000038 genimg_get_type_id
+effb65e0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_reginfo
+eff6349c g     F .text	00000020 image_multi_count
+eff7eaac  w    F .text	00000004 sandbox_serial_initialize
+effb6868 g       .bootpg	00000000 __stop___ex_table
+effb6040 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_bdinfo
+eff6d8bc  w    F .text	00000008 esdhc_status_fixup
+eff62228 g     F .text	0000007c sbrk
+eff972f0 g     F .text	000000a8 eth_set_current
+eff93d08 g     F .text	0000005c strdup
+eff46d24 g     F .text	00000128 do_bootm_linux
+eff68a08 g     F .text	00000094 part_set_generic_name
+eff7d400 g     F .text	00000118 pci_hose_find_devices
+f0000010 g     O .bss	00000004 working_fdt
+eff679f0 g     F .text	00000264 xyzModem_stream_open
+eff7a2e8 g     F .text	0000004c phy_register
+eff5dc3c g     F .text	00000128 usb_string
+effb67d8 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_vlan
+eff481e8  w    F .text	00000004 board_detail
+eff7be64 g     F .text	00000050 pci_register_hose
+eff46aa8 g       .text	00000000 ppcDcbz
+eff8a1ac g     F .text	0000005c lmb_alloc_base
+eff7f3f8 g     F .text	00000148 spi_claim_bus
+eff7f36c g     F .text	00000018 NS16550_tstc
+f0000000 g       .bss	00000000 __bss_start
+eff40e58 g       .text	00000000 out32
+eff83c20 g     F .text	0000007c fs_readdir
+eff468b8 g       .text	00000000 memset
+eff59944 g     F .text	00000108 autoboot_command
+eff88690 g     F .text	00000050 fdt_add_subnode
+effb67e0 g     O .u_boot_list	00000018 _u_boot_list_2_env_driver_2_flash
+effb6070 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_bootd
+eff481ec g     F .text	00000134 do_bdinfo
+eff7006c g     F .text	0000012c mtd_arg_off
+eff7eaac  w    F .text	00000004 s3c24xx_serial_initialize
+eff846a4 g     F .text	00000068 ext4fs_read
+eff8470c g     F .text	00000050 ext4fs_probe
+eff7e038 g     F .text	000000fc fsl_pci_config_unlock
+effb5fb4 g     O .data	00000004 nand_curr_device
+eff7fce0 g     F .text	00000228 fsl_fdt_fixup_dr_usb
+f0000008 g     O .bss	00000001 current_mtd_partnum
+eff7beb4 g     F .text	00000064 pci_bus_to_hose
+eff45a50 g     F .text	00000004 irq_install_handler
+eff83870 g     F .text	000000e4 fs_set_blk_dev
+eff45f14 g     F .text	000000a0 disable_tlb
+eff93950 g     F .text	00000100 slre_compile
+eff473e8 g     F .text	000000d4 ft_board_setup
+eff6e73c g     F .text	0000006c i2c_read
+eff87b08 g     F .text	00000058 _fdt_check_node_offset
+eff84640 g     F .text	00000038 ext4fs_exists
+effb66e8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_test
+f001bbc0 g     O .bss	00010000 do_fat_read_at_block
+eff73754 g     F .text	00000044 spi_flash_free
+eff6187c g     F .text	00000064 hwconfig_sub_f
+eff63698 g     F .text	00000034 memmove_wd
+eff7c550 g     F .text	00000070 pci_hose_find_capability
+eff8ad58 g     F .text	00000078 md5_wd
+effb6430 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_loop
+effb67d0 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_serverip
+eff5fe88 g     F .text	00000088 usb_stor_info
+effb67a8 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_gatewayip
+eff569fc g     F .text	00000034 get_env_id
+eff995a0 g     F .text	00000124 ping_start
+f0000048 g     O .bss	00000004 ext4fs_indir3_size
+effb5fc8 g     O .data	00000004 cur
+effb6790 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_console
+eff81ebc g     F .text	000000cc submit_int_msg
+effb67a0 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_flags
+eff8a208 g     F .text	00000034 lmb_alloc
+f000004c g     O .bss	00000004 g_parent_inode
+eff970d4 g     F .text	00000038 eth_common_init
+f00000c0 g     O .bss	00000004 net_netmask
+eff97f30 g     F .text	00000080 net_update_ether
+eff5a30c  w    F .text	00000008 board_flash_wp_on
+effb64c0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_mmcinfo
+eff670a8 g     F .text	000001b4 _do_help
+eff7eaac  w    F .text	00000004 sconsole_serial_initialize
+eff7f33c g     F .text	00000030 NS16550_getc
+eff6e040  w    F .text	00000030 detail_board_ddr_info
+eff46e4c g     F .text	00000098 boot_prep_vxworks
+eff6de1c g     F .text	00000080 fsl_ddr_get_version
+effb67b8 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_loadaddr
+eff64400 g     F .text	000000a0 image_setup_linux
+eff41620 g     F .text	000000c0 init_early_memctl_regs
+eff5cb08 g     F .text	00000050 mdio_alloc
+f00155d0 g     O .bss	0000000c stdio_devices
+eff6459c g     F .text	000001b8 boot_relocate_fdt
+effb6658 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_setenv
+eff7e3f8 g     F .text	000000a8 fsl_pcie_init_ctrl
+eff82830 g     F .text	000000ac env_init
+f00000c4 g     O .bss	00000004 bootp_try
+effb6730 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_usb
+f0000050 g     O .bss	00000004 ext4fs_indir2_size
+eff63a48 g     F .text	0000006c get_table_entry_id
+eff6facc g     F .text	000000d0 mtd_erase
+eff6b23c g     F .text	0000008c mmc_switch
+eff61c0c g     F .text	00000054 putc
+effb65b0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_protect
+eff6d91c g     F .text	000000e4 rtc_calc_weekday
+eff4131c g     F .text	00000044 is_core_valid
+eff7d0a8  w    F .text	00000018 pci_skip_dev
+f0000054 g     O .bss	00000004 ext4fs_indir1_block
+effb6100 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_cmp
+eff818dc g     F .text	0000001c submit_bulk_msg
+eff6b7b0 g     F .text	00000414 mmc_hwpart_config
+eff44100 g     F .text	00000278 ft_fixup_cpu
+eff89088 g     F .text	00000084 fdt_get_phandle
+eff82398 g     F .text	0000004c set_default_vars
+eff66f00 g     F .text	0000002c cli_init
+eff4687c g       .text	00000000 strcmp
+eff5bad8 g     F .text	000001cc fdt_initrd
+eff6e918 g     F .text	0000003c i2c_reg_write
+f0000030 g     O .bss	00000004 save_size
+eff41570 g     F .text	000000b0 print_lbc_regs
+eff7ecd4 g     F .text	00000038 serial_init
+effb5f60 g     O .data	00000028 z_errmsg
+eff413ac g     F .text	0000004c fixup_cpu
+eff4569c g     F .text	00000034 print_reginfo
+eff70198 g     F .text	00000140 mtd_arg_off_size
+eff8875c g     F .text	000001b4 fdt_open_into
+eff9261c g     F .text	000000a4 display_options_get_banner_priv
+eff8ea6c g     F .text	00000008 zcalloc
+eff60178 g     F .text	00000348 usb_stor_get_info
+eff42000 g       .text	00000000 __secondary_start_page
+eff95b00 g     F .text	00000064 arp_init
+eff40dac g       .text	00000000 icache_disable
+eff886e0 g     F .text	0000007c fdt_del_node
+eff5b388 g     F .text	00000118 do_bootvx_fdt
+eff5cc04 g     F .text	000000b4 mdio_list_devices
+eff7eaac  w    F .text	00000004 uartlite_serial_initialize
+effb60a0 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_bootm
+eff5ca4c g     F .text	00000078 miiphy_get_dev_by_name
+eff83a58 g     F .text	00000054 fs_exists
+eff61a84 g     F .text	00000050 fgetc
+effb6148 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_cpu
+eff575b8 g     F .text	0000006c hash_lookup_algo
+eff631f8 g     F .text	00000190 .hidden memalign
+eff6f96c g     F .text	0000004c __get_mtd_device
+eff95118 g     F .text	00000068 sprintf
+eff9790c g     F .text	00000308 net_loop
+eff6fc58 g     F .text	000000a4 mtd_write
+eff7eaac  w    F .text	00000004 au1x00_serial_initialize
+effb6058 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_boot
+eff84a08 g     F .text	00000a20 read_allocated_block
+eff89fa8 g     F .text	00000204 __lmb_alloc_base
+eff466a0 g     F .text	00000064 ProgramCheckException
+eff841d4 g     F .text	000003c8 ext4fs_read_file
+eff68264 g     F .text	00000070 part_init
+eff82a5c g     F .text	00000154 env_attr_walk
+eff5e7dc  w    F .text	00000004 usb_hub_reset_devices
+f00000c8 g     O .bss	00000004 arp_wait_packet_ethaddr
+eff84678 g     F .text	0000002c ext4fs_size
+eff59fe8 g     F .text	00000038 board_init_f
+eff96e70 g     F .text	0000004c eth_rx
+eff7386c g     F .text	00000180 spi_flash_write_common
+eff40e4c g       .text	00000000 out16r
+eff530b8 g     F .text	00000060 do_tftpb
+effb67b0 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_ipaddr
+effb40a4 g     O .data	0000000c stdio_names
+eff7a278 g     F .text	00000040 genphy_startup
+eff7589c g     F .text	0000014c e1000_standby_eeprom
+eff64f6c g     F .text	0000005c fit_image_get_type
+eff4896c g     F .text	00000090 eeprom_read
+eff6920c g     F .text	000000b8 ata_id_c_string
+eff4444c g     F .text	00000610 ft_cpu_setup
+eff8793c g     F .text	00000064 fdt_check_header
+eff56a30 g     F .text	0000007c env_set
+eff65de8 g     F .text	0000004c fit_conf_get_prop_node_index
+eff6d8c4 g     F .text	00000058 fdt_fixup_esdhc
+eff8e754 g     F .text	000000ec sha256_update
+eff83c9c g     F .text	00000068 fs_closedir
+eff672d8 g     F .text	00000108 cmd_process
+eff7eec4 g     F .text	00000030 serial_puts
+eff45a64 g     F .text	00000008 do_irqinfo
+eff47074 g     F .text	00000050 timer_interrupt
+f0000058 g     O .bss	00000004 ext4fs_file
+eff5db30 g     F .text	00000034 usb_get_configuration_no
+eff6fa34 g     F .text	0000006c __put_mtd_device
+f0000018 g     O .bss	00000004 mem_malloc_brk
+eff88cc8 g     F .text	0000008c fdt_get_name
+eff61e5c g     F .text	00000034 had_ctrlc
+eff46b1c g       .text	00000000 get_ticks
+eff7eaec g     F .text	000000a8 serial_stdio_init
+eff7eaac  w    F .text	00000004 pxa_serial_initialize
+eff6e954  w    F .text	00000048 i2c_init
+eff48928 g     F .text	00000044 eeprom_init
+effb62f8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_go
+effb67c0 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_netmask
+eff4700c g     F .text	00000014 disable_interrupts
+eff99d38 g     F .text	0000032c tftp_start
+eff40e34 g       .text	00000000 out8
+eff85558 g     F .text	00000358 ext4fs_iterate_dir
+eff87504 g     F .text	00000058 fat_read_file
+eff47be4 g     F .text	0000030c blk_common_cmd
+eff5c3dc g     F .text	000000e8 fdt_shrink_to_minimum
+eff87cb8 g     F .text	00000054 fdt_first_subnode
+eff80184 g     F .text	0000009c has_erratum_a007075
+eff41124 g       .text	00000000 flush_dcache
+eff88574 g     F .text	0000011c fdt_add_subnode_namelen
+eff83044 g     F .text	00000068 env_flags_parse_varaccess
+eff7eaac  w    F .text	00000004 atmel_serial_initialize
+eff6a520 g     F .text	0000005c blk_driver_lookup_type
+eff9755c g     F .text	00000078 net_auto_load
+eff61bc4 g     F .text	00000048 fputc
+eff5debc  w    F .text	00000008 usb_alloc_device
+eff8475c g     F .text	00000094 ext4_read_file
+eff79b4c g     F .text	00000008 genphy_shutdown
+eff7bdf4 g     F .text	00000028 pci_hose_write_config_dword
+eff7c044 g     F .text	0000005c pci_write_config_byte
+eff5719c g     F .text	000001b0 jumptable_init
+eff5e464 g     F .text	00000058 usb_new_device
+eff8a23c  w    F .text	00000004 board_lmb_reserve
+eff96778 g     F .text	00000044 eth_get_dev_index
+eff7f564 g     F .text	00000124 spi_setup_slave
+eff96368 g     F .text	00000284 bootp_request
+f00000cc g     O .bss	00000004 net_arp_wait_packet_ip
+eff64164 g     F .text	0000017c boot_get_loadable
+eff7eaac  w    F .text	00000004 pl01x_serial_initialize
+eff72b2c g     F .text	00000054 get_nand_dev_by_index
+eff971a4 g     F .text	000000ac eth_current_changed
+eff82bb0 g     F .text	000000a0 env_attr_lookup
+eff64138 g     F .text	0000002c boot_get_setup
+eff44a5c g     F .text	000001a4 ft_verify_fdt
+eff56aac g     F .text	00000040 env_set_ulong
+effb65f8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_reset
+eff46ee4 g     F .text	0000005c boot_jump_vxworks
+eff818f8 g     F .text	000005c4 submit_control_msg
+eff89da0 g     F .text	00000048 lmb_init
+eff6a674 g     F .text	00000070 blk_print_part_devnum
+00000625 g       *ABS*	00000000 __fixup_entries
+eff84880 g     F .text	00000188 ext4fs_read_inode
+eff43180 g       .text	00000000 spin_table_compat
+effb6028 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_base
+eff6aebc  w    F .text	00000008 board_mmc_getcd
+effb6868 g       .bootpg	00000000 __start___ex_table
+eff87bb8 g     F .text	00000100 fdt_next_node
+eff97fb0 g     F .text	000000a0 net_set_ip_header
+eff95520 g     F .text	000000a8 simple_strtoul
+eff46c40 g     F .text	00000008 arch_fixup_fdt
+eff69428  w    F .text	00000050 sata_stop
+eff60764 g     F .text	00000070 addr2info
+f0000004 g     O .bss	00000004 machinecheck_error
+eff7be1c g     F .text	00000048 pci_get_hose_head
+eff7c158 g     F .text	0000004c find_hose_by_cfg_addr
+eff62068 g     F .text	00000010 console_init_f
+eff65aec g     F .text	00000054 fit_image_check_os
+f0000000 g     O .bss	00000004 machinecheck_count
+f002bbc0 g     O .bss	00010000 get_dentfromdir_block
+eff6e8a8 g     F .text	00000034 i2c_get_bus_speed
+effb3138 g     O .data	00000100 op_adv
+effb5fe0 g       .data	00000000 _edata
+f000005c g     O .bss	00000004 ext4fs_root
+eff7eaac  w    F .text	00000004 s5p_serial_initialize
+eff5b938 g     F .text	00000090 fdt_find_and_setprop
+eff92bb8 g     F .text	0000002c crc32_wd
+eff63558 g     F .text	00000050 env_get_bootm_low
+f0000014 g     O .bss	00000001 use_defaults
+eff6a7e0 g     F .text	000000a0 blk_show_device
+eff41198 g     F .text	00000068 identify_cpu
+eff72ff0 g     F .text	000000dc nand_verify_page_oob
+eff50760 g     F .text	0000006c device_find
+eff56fc4 g     F .text	00000050 env_get_ulong
+eff68dd0 g     F .text	00000054 part_print_dos
+eff996c4 g     F .text	000000f0 ping_receive
+eff7cd84 g     F .text	000000a8 pciauto_region_allocate
+eff7c5c0 g     F .text	000002e8 pciauto_setup_device
+eff7991c g     F .text	00000058 tsec_standard_init
+eff40b0c g       .text	00000000 _end_of_vectors
+eff470fc  w    F .text	00000020 arch_reserve_stacks
+eff6363c g     F .text	0000005c env_get_bootm_mapsize
+f00000d0 g     O .bss	00000004 net_tx_packet
+eff7cd48 g     F .text	0000003c pciauto_region_align
+eff59bc4  w    F .text	00000008 arch_cpu_init_dm
+eff96fb4 g     F .text	00000068 eth_env_set_enetaddr
+eff96d38 g     F .text	00000090 eth_init
+effae850 g       .reloc	00000000 _FIXUP_TABLE_
+effb5fe0 g     O .u_boot_list	00000018 _u_boot_list_2_blk_driver_2_mmc
+eff74284 g     F .text	00000044 spi_flash_cmd
+eff40e20 g       .text	00000000 dcache_status
+eff7eaac  w    F .text	00000004 zynq_serial_initialize
+eff61e90 g     F .text	00000038 clear_ctrlc
+eff40e64 g       .text	00000000 out32r
+eff42160 g       .text	00000000 enable_cpu_a011_workaround
+eff63fc4 g     F .text	00000174 boot_ramdisk_high
+eff79aa0 g     F .text	00000030 tsec_phy_read
+eff6092c g     F .text	000000e8 flash_perror
+eff662d4 g     F .text	0000056c fit_image_load
+eff53b44 g     F .text	0000002c sata_remove
+eff67478 g     F .text	0000026c srec_decode
+f00000d4 g     O .bss	00000004 net_dns_server
+effb6418 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_loady
+effb6700 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_tftpboot
+eff615c8 g     F .text	0000003c cli_readline
+eff47238 g     F .text	00000098 board_early_init_r
+eff40fa4 g       .text	00000000 in_ram
+eff45378 g     F .text	000002c8 checkcpu
+eff5ff10 g     F .text	00000038 usb_stor_reset
+eff7ee3c g     F .text	0000002c serial_getc
+eff88ad0 g     F .text	00000010 fdt_string
+eff79f30 g     F .text	00000168 genphy_update_link
+eff789f0 g     F .text	00000538 e1000_initialize
+eff45a6c g     F .text	000000b8 get_sys_info
+effb6788 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_callbacks
+eff9a104 g     F .text	00000058 .hidden _restgpr_14_x
+eff59878 g     F .text	00000068 u_boot_hush_start
+effb61a8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_editenv
+eff5cac4 g     F .text	00000044 miiphy_init
+eff5cd88 g     F .text	00000034 mdio_get_current_dev
+eff65304 g     F .text	0000039c fit_image_print
+eff815c0 g     F .text	0000031c usb_lowlevel_init
+eff618e0 g     F .text	00000064 hwconfig_subarg_f
+eff53b70 g     F .text	00000030 sata_probe
+effb67c8 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_nvlan
+eff6cddc g     F .text	00000064 find_mmc_device
+effb531c g     O .data	000001e0 spi_flash_ids
+eff57194 g     F .text	00000008 get_version
+eff7e4a0 g     F .text	00000174 fsl_pcie_init_board
+eff98050 g     F .text	000000ac net_set_udp_header
+eff5b9c8 g     F .text	00000078 fdt_find_or_add_subnode
+eff635a8 g     F .text	00000094 env_get_bootm_size
+eff7a844  w    F .text	0000003c board_phy_config
+eff87a04 g     F .text	00000104 fdt_next_tag
+eff535e0 g     F .text	00000158 pciinfo
+effb5fdc g     O .data	00000004 tftp_timeout_count_max
+effb6280 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_fatload
+effff000 g       .bootpg	00000000 _start_e500
+eff7d23c g     F .text	0000005c pci_map_bar
+eff85f64 g     F .text	0000005c ext4_read_superblock
+eff7cc1c g     F .text	00000108 pciauto_config_device
+eff42140 g       .text	00000000 __bootpg_addr
+eff69b9c g     F .text	000000fc sata_write
+eff5b584 g     F .text	00000038 bootm_os_get_boot_func
+eff7eaac  w    F .text	00000004 sa1100_serial_initialize
+eff56aec g     F .text	0000004c env_set_hex
+eff49258 g     F .text	00000030 do_ext2load
+f001a588 g     O .bss	00000110 sata_dev_desc
+f003bbc0 g     O .bss	00010000 get_contents_vfatname_block
+eff6b160 g     F .text	000000dc mmc_send_status
+eff97160 g     F .text	00000044 eth_get_name
+eff8910c g     F .text	00000060 fdt_get_alias_namelen
+eff5ddac g     F .text	000000b0 usb_alloc_new_device
+eff4609c g     F .text	0000017c tlb_map_range
+eff4842c g     F .text	000001f8 mk_date
+effb6824 g     O .u_boot_list	0000002c _u_boot_list_2_i2c_2_fsl_1
+eff5b67c g     F .text	00000078 fdt_support_default_count_cells
+effb65c8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_question_mark
+eff45bb0 g     F .text	00000024 invalidate_tlb
+eff6cf0c g     F .text	00000034 get_mmc_num
+eff59e84  w    F .text	00000008 mach_cpu_init
+eff6fd74 g     F .text	00000098 mtd_unlock
+eff45c38 g     F .text	0000004c read_tlbcam_entry
+f004bbe0 g     O .bss	00000400 net_boot_file_name
+eff73c14 g     F .text	0000016c spi_flash_cmd_read_ops
+eff7eaac  w    F .text	00000004 mxc_serial_initialize
+eff7eaac  w    F .text	00000004 iop480_serial_initialize
+eff7bd54 g     F .text	00000028 pci_hose_read_config_word
+eff7bf18 g     F .text	00000064 pci_read_config_byte
+eff8c07c g     F .text	000000ec sha1_update
+eff96310 g     F .text	00000058 bootp_reset
+eff86e14 g     F .text	00000124 file_fat_detectfs
+eff46a98 g       .text	00000000 ppcDcbf
+eff4675c g     F .text	00000070 ExtIntException
+eff9940c g     F .text	0000015c nfs_start
+effb6088 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_bootelf
+eff9a120 g     F .text	0000003c .hidden _restgpr_21_x
+eff89630 g     F .text	00000080 fdt_stringlist_count
+eff468a0 g       .text	00000000 strlen
+eff7c4a4 g     F .text	000000ac pci_find_cap
+eff62078 g     F .text	000000b8 stdio_print_current_devices
+eff464bc g     F .text	000001ac MachineCheckException
+eff5c4c4 g     F .text	0000016c fdt_pci_dma_ranges
+eff82588  w    F .text	00000030 env_get_location
+eff5cdbc g     F .text	000000a8 mdio_phydev_for_ethname
+eff7f2b8 g     F .text	00000060 NS16550_reinit
+eff5e844 g     F .text	00000044 usb_hub_reset
+eff634bc g     F .text	0000009c image_multi_getimg
+eff85e84 g     F .text	00000084 ext4fs_set_blk_dev
+effb64a8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_mmc
+eff9a10c g     F .text	00000050 .hidden _restgpr_16_x
+eff61d74 g     F .text	000000e8 confirm_yesno
+eff65058 g     F .text	00000034 fit_image_get_entry
+eff467cc g     F .text	00000040 DebugException
+eff45a58 g     F .text	0000000c timer_interrupt_cpu
+eff4103c g       .text	00000000 trap_init
+eff56d4c g     F .text	0000008c envmatch
+eff7eaac  w    F .text	00000004 mpc8xx_serial_initialize
+eff7bda4 g     F .text	00000028 pci_hose_write_config_byte
+eff55b70 g     F .text	0000028c common_diskboot
+eff93c58 g     F .text	0000002c strchr
+eff5bea4 g     F .text	00000040 do_fixup_by_prop_u32
+eff46ffc g     F .text	00000010 enable_interrupts
+eff83dc4 g     F .text	0000007c do_size
+eff61c60 g     F .text	00000048 fputs
+eff7c0a0 g     F .text	0000005c pci_write_config_word
+eff9a138 g     F .text	00000024 .hidden _restgpr_27_x
+eff462d4 g     F .text	00000038 setup_ddr_tlbs
+eff40dc8 g       .text	00000000 icache_status
+eff70380 g     F .text	000000a0 mtd_erase_callback
+eff41274  w    F .text	000000a8 cpu_numcores
+eff8f628 g     F .text	00000084 inflateEnd
+eff95a24 g     F .text	000000a4 compute_ip_checksum
+eff5a04c  w    F .text	00000008 power_init_board
+effb6778 g     O .u_boot_list	00000008 _u_boot_list_2_env_clbk_2_baudrate
+eff6ff7c g     F .text	0000006c mtd_block_isbad
+eff6a774 g     F .text	0000006c blk_print_device_num
+eff89780 g     F .text	0000005c fdt_node_check_compatible
+eff96e18 g     F .text	00000058 eth_send
+eff53550 g     F .text	00000090 pci_header_show_brief
+eff6b728 g     F .text	00000088 mmc_switch_part
+eff8e840 g     F .text	000001d0 sha256_finish
+eff5dd64 g     F .text	00000048 usb_get_dev_index
+eff5e610 g     F .text	0000001c usb_device_has_child_on_port
+eff85d28 g     F .text	0000015c ext4fs_mount
+eff89a48 g     F .text	00000090 initcall_run_list
+eff65cd0 g     F .text	000000ec fit_conf_get_node
+eff847f0 g     F .text	00000044 ext4fs_uuid
+eff97698 g     F .text	00000068 net_set_timeout_handler
+eff40040 g       .text	00000000 _start_cont
+eff73d80 g     F .text	00000470 spi_flash_scan
+effb6568 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_pci
+eff6e6bc g     F .text	00000034 i2c_init_all
+eff6a57c g     F .text	00000040 blk_get_if_type_name
+eff75b38 g     F .text	00000114 e1000_release_eeprom
+eff7e614 g     F .text	000000c0 ft_fsl_pci_setup
+eff6aa44 g     F .text	0000007c blk_write_devnum
+eff88fcc g     F .text	00000064 fdt_getprop_by_offset
+eff88ae0 g     F .text	00000074 fdt_get_mem_rsv
+eff40e04 g       .text	00000000 dcache_disable
+eff7f3f0 g     F .text	00000004 spi_free_slave
+eff8f4ec g     F .text	0000013c inflateInit2_
+effb08d8 g     O .data	00000078 law_table
+effb6220 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_ext2load
+eff7f384 g     F .text	0000006c spi_do_alloc_slave
+eff6e070 g     F .text	0000002c board_add_ram_info
+eff474bc g     F .text	00000150 fixed_sdram
+eff6db6c g     F .text	0000014c rtc_get
+eff910e8 g     F .text	00000008 gzfree
+f00000d8 g     O .bss	00000004 net_ip
+eff83aac g     F .text	0000005c fs_size
+eff7b82c g     F .text	0000009c m88e1518_phy_writebits
+eff79ad0 g     F .text	0000007c fsl_pq_mdio_init
+eff7c0fc g     F .text	0000005c pci_write_config_dword
+effb63b8 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_itest
+eff85bbc g     F .text	00000094 ext4fs_find_file
+eff980fc g     F .text	00000110 net_send_udp_packet
+eff63b94 g     F .text	00000094 genimg_get_kernel_addr_fit
+eff98304 g     F .text	00000068 string_to_vlan
+eff8ef74 g     F .text	000004f4 inflate_table
+eff9a11c g     F .text	00000040 .hidden _restgpr_20_x
+eff7bd2c g     F .text	00000028 pci_hose_read_config_byte
+eff64cb8 g     F .text	00000080 fit_parse_conf
+eff66a38  w    F .text	0000000c get_effective_memsize
+eff92a48 g     F .text	0000013c crc32_no_comp
+eff59e6c  w    F .text	00000008 reserve_arch
+eff70e9c g     F .text	00000048 flash_sector_size
+eff93d64 g     F .text	00000038 strpbrk
+eff692c4 g     F .text	00000028 ata_swap_buf_le16
+eff89fa0 g     F .text	00000008 lmb_reserve
+eff7f6ac g     F .text	00000044 spi_cs_deactivate
+eff66c84 g     F .text	00000030 stdio_register
+eff5b8dc g     F .text	0000005c fdt_getprop_u32_default
+eff71374 g     F .text	000007d0 write_buff
+effb6448 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_md
+eff8831c g     F .text	0000009c fdt_del_mem_rsv
+effb6850 g     O .u_boot_list	00000018 _u_boot_list_2_part_driver_2_dos
+eff67c54 g     F .text	00000278 xyzModem_stream_read
+eff623cc g     F .text	0000027c .hidden free
+eff7a2b8 g     F .text	00000030 phy_init
+effb6130 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_cp
+eff95744 g     F .text	000000cc simple_strtoull
+effb6640 g     O .u_boot_list	00000018 _u_boot_list_2_cmd_2_saveenv
+eff9761c g     F .text	00000034 net_get_arp_handler
+
+

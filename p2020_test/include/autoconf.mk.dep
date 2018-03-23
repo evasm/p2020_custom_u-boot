@@ -1,0 +1,259 @@
+include/config/auto.conf: ../include/common.h ../include/linux/kconfig.h \
+ include/generated/autoconf.h include/config.h \
+ ../include/config_defaults.h ../include/config_uncmd_spl.h \
+ ../include/configs/p1_p2_rdb_pc.h ../arch/powerpc/include/asm/config.h \
+ ../arch/powerpc/include/asm/config_mpc85xx.h \
+ ../include/fsl_ddrc_version.h ../include/linux/kconfig.h \
+ ../include/config_fallbacks.h ../include/errno.h \
+ ../include/linux/errno.h ../include/time.h ../include/linux/typecheck.h \
+ ../include/asm-offsets.h ../include/linux/bitops.h \
+ ../arch/powerpc/include/asm/types.h ../include/asm-generic/bitsperlong.h \
+ ../include/linux/compiler.h ../include/linux/compiler-gcc.h \
+ ../include/linux/types.h ../include/linux/posix_types.h \
+ ../include/linux/stddef.h ../arch/powerpc/include/asm/posix_types.h \
+ /usr/lib/gcc-cross/powerpc-linux-gnu/5/include/stdbool.h \
+ ../arch/powerpc/include/asm/bitops.h \
+ ../arch/powerpc/include/asm/byteorder.h \
+ ../include/linux/byteorder/big_endian.h \
+ ../include/linux/byteorder/swab.h ../include/linux/byteorder/generic.h \
+ ../include/asm-generic/bitops/__ffs.h ../include/linux/bug.h \
+ ../include/vsprintf.h \
+ /usr/lib/gcc-cross/powerpc-linux-gnu/5/include/stdarg.h \
+ ../include/linux/build_bug.h ../include/linux/printk.h \
+ ../include/stdio.h ../include/linux/delay.h ../include/linux/kernel.h \
+ ../include/linux/string.h ../arch/powerpc/include/asm/string.h \
+ ../include/linux/linux_string.h ../include/linux/stringify.h \
+ ../arch/powerpc/include/asm/ptrace.h ../include/part.h ../include/blk.h \
+ ../include/efi.h ../include/linux/linkage.h \
+ ../arch/powerpc/include/asm/linkage.h ../include/ide.h ../include/uuid.h \
+ ../include/linux/list.h ../include/linux/poison.h ../include/part_efi.h \
+ ../include/flash.h ../include/image.h ../include/compiler.h \
+ /usr/lib/gcc-cross/powerpc-linux-gnu/5/include/stddef.h ../include/lmb.h \
+ ../arch/powerpc/include/asm/u-boot.h ../include/asm-generic/u-boot.h \
+ ../arch/powerpc/include/asm/ppc.h ../include/mpc85xx.h ../include/e500.h \
+ ../arch/powerpc/include/asm/immap_85xx.h \
+ ../arch/powerpc/include/asm/fsl_dma.h \
+ ../arch/powerpc/include/asm/fsl_i2c.h ../include/fsl_ifc.h \
+ ../include/fsl_sec.h ../include/common.h \
+ ../arch/powerpc/include/asm/io.h ../include/addr_map.h \
+ ../include/asm-generic/io.h ../include/fsl_sfp.h \
+ ../arch/powerpc/include/asm/fsl_lbc.h ../include/fsl_fman.h \
+ ../include/fsl_immap.h ../arch/powerpc/include/asm/processor.h \
+ ../arch/powerpc/include/asm/cache.h ../include/command.h \
+ ../include/linker_lists.h ../include/hash.h ../include/libfdt.h \
+ ../include/linux/libfdt.h ../include/linux/libfdt_env.h \
+ ../include/linux/../../scripts/dtc/libfdt/libfdt.h \
+ ../include/linux/../../scripts/dtc/libfdt/libfdt_env.h \
+ ../include/linux/../../scripts/dtc/libfdt/fdt.h ../include/fdt_support.h \
+ ../include/pci.h ../include/pci_ids.h ../include/log.h \
+ ../include/dm/uclass-id.h ../arch/powerpc/include/asm/global_data.h \
+ ../arch/powerpc/include/asm/config.h \
+ ../include/asm-generic/global_data.h ../include/membuff.h \
+ ../include/display_options.h ../include/u-boot/crc.h ../include/net.h \
+ ../include/bootstage.h ../include/environment.h
+
+../include/linux/kconfig.h:
+
+include/generated/autoconf.h:
+
+include/config.h:
+
+../include/config_defaults.h:
+
+../include/config_uncmd_spl.h:
+
+../include/configs/p1_p2_rdb_pc.h:
+
+../arch/powerpc/include/asm/config.h:
+
+../arch/powerpc/include/asm/config_mpc85xx.h:
+
+../include/fsl_ddrc_version.h:
+
+../include/linux/kconfig.h:
+
+../include/config_fallbacks.h:
+
+../include/errno.h:
+
+../include/linux/errno.h:
+
+../include/time.h:
+
+../include/linux/typecheck.h:
+
+../include/asm-offsets.h:
+
+../include/linux/bitops.h:
+
+../arch/powerpc/include/asm/types.h:
+
+../include/asm-generic/bitsperlong.h:
+
+../include/linux/compiler.h:
+
+../include/linux/compiler-gcc.h:
+
+../include/linux/types.h:
+
+../include/linux/posix_types.h:
+
+../include/linux/stddef.h:
+
+../arch/powerpc/include/asm/posix_types.h:
+
+/usr/lib/gcc-cross/powerpc-linux-gnu/5/include/stdbool.h:
+
+../arch/powerpc/include/asm/bitops.h:
+
+../arch/powerpc/include/asm/byteorder.h:
+
+../include/linux/byteorder/big_endian.h:
+
+../include/linux/byteorder/swab.h:
+
+../include/linux/byteorder/generic.h:
+
+../include/asm-generic/bitops/__ffs.h:
+
+../include/linux/bug.h:
+
+../include/vsprintf.h:
+
+/usr/lib/gcc-cross/powerpc-linux-gnu/5/include/stdarg.h:
+
+../include/linux/build_bug.h:
+
+../include/linux/printk.h:
+
+../include/stdio.h:
+
+../include/linux/delay.h:
+
+../include/linux/kernel.h:
+
+../include/linux/string.h:
+
+../arch/powerpc/include/asm/string.h:
+
+../include/linux/linux_string.h:
+
+../include/linux/stringify.h:
+
+../arch/powerpc/include/asm/ptrace.h:
+
+../include/part.h:
+
+../include/blk.h:
+
+../include/efi.h:
+
+../include/linux/linkage.h:
+
+../arch/powerpc/include/asm/linkage.h:
+
+../include/ide.h:
+
+../include/uuid.h:
+
+../include/linux/list.h:
+
+../include/linux/poison.h:
+
+../include/part_efi.h:
+
+../include/flash.h:
+
+../include/image.h:
+
+../include/compiler.h:
+
+/usr/lib/gcc-cross/powerpc-linux-gnu/5/include/stddef.h:
+
+../include/lmb.h:
+
+../arch/powerpc/include/asm/u-boot.h:
+
+../include/asm-generic/u-boot.h:
+
+../arch/powerpc/include/asm/ppc.h:
+
+../include/mpc85xx.h:
+
+../include/e500.h:
+
+../arch/powerpc/include/asm/immap_85xx.h:
+
+../arch/powerpc/include/asm/fsl_dma.h:
+
+../arch/powerpc/include/asm/fsl_i2c.h:
+
+../include/fsl_ifc.h:
+
+../include/fsl_sec.h:
+
+../include/common.h:
+
+../arch/powerpc/include/asm/io.h:
+
+../include/addr_map.h:
+
+../include/asm-generic/io.h:
+
+../include/fsl_sfp.h:
+
+../arch/powerpc/include/asm/fsl_lbc.h:
+
+../include/fsl_fman.h:
+
+../include/fsl_immap.h:
+
+../arch/powerpc/include/asm/processor.h:
+
+../arch/powerpc/include/asm/cache.h:
+
+../include/command.h:
+
+../include/linker_lists.h:
+
+../include/hash.h:
+
+../include/libfdt.h:
+
+../include/linux/libfdt.h:
+
+../include/linux/libfdt_env.h:
+
+../include/linux/../../scripts/dtc/libfdt/libfdt.h:
+
+../include/linux/../../scripts/dtc/libfdt/libfdt_env.h:
+
+../include/linux/../../scripts/dtc/libfdt/fdt.h:
+
+../include/fdt_support.h:
+
+../include/pci.h:
+
+../include/pci_ids.h:
+
+../include/log.h:
+
+../include/dm/uclass-id.h:
+
+../arch/powerpc/include/asm/global_data.h:
+
+../arch/powerpc/include/asm/config.h:
+
+../include/asm-generic/global_data.h:
+
+../include/membuff.h:
+
+../include/display_options.h:
+
+../include/u-boot/crc.h:
+
+../include/net.h:
+
+../include/bootstage.h:
+
+../include/environment.h:
