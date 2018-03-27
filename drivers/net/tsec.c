@@ -649,6 +649,7 @@ static int init_phy(struct tsec_private *priv)
 {
 	struct phy_device *phydev;
 	struct tsec __iomem *regs = priv->regs;
+
 	u32 supported = (SUPPORTED_10baseT_Half |
 			SUPPORTED_10baseT_Full |
 			SUPPORTED_100baseT_Half |
@@ -706,27 +707,7 @@ static int tsec_initialize(bd_t *bis, struct tsec_info_struct *tsec_info)
 	priv->regs = tsec_info->regs;
 	priv->phyregs_sgmii = tsec_info->miiregs_sgmii;
 
-	/* kkk */
-#if 0
 	priv->phyaddr = tsec_info->phyaddr;
-#else
-	if(tsec_info->phyaddr == 0)
-	{
-		printf("tsec0: phy addr 25\n");
-		priv->phyaddr = 25;
-	}
-	else if(tsec_info->phyaddr == 1)
-	{
-		printf("tsec1: phy addr 26\n");
-		priv->phyaddr = 26;
-	}
-	else if(tsec_info->phyaddr == 2)
-	{
-		printf("tsec2: phy addr 0\n");
-		priv->phyaddr = 0;
-	}
-#endif
-
 	priv->tbiaddr = CONFIG_SYS_TBIPA_VALUE;
 	priv->flags = tsec_info->flags;
 

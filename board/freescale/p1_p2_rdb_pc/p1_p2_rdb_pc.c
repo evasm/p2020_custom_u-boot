@@ -345,6 +345,12 @@ int board_eth_init(bd_t *bis)
 
 #ifdef CONFIG_TSEC1
 	SET_STD_TSEC_INFO(tsec_info[num], 1);
+
+	/* kkk */
+	tsec_info[num].interface = PHY_INTERFACE_MODE_RGMII;
+	tsec_info[num].phyaddr = 25;
+	tsec_info[num].flags |= TSEC_GIGABIT | TSEC_REDUCED;
+
 	num++;
 #endif
 #ifdef CONFIG_TSEC2
@@ -353,10 +359,22 @@ int board_eth_init(bd_t *bis)
 		printf("eTSEC2 is in sgmii mode.\n");
 		tsec_info[num].flags |= TSEC_SGMII;
 	}
+
+	/* kkk */
+	tsec_info[num].interface = PHY_INTERFACE_MODE_RGMII;
+	tsec_info[num].phyaddr = 26;
+	tsec_info[num].flags |= TSEC_GIGABIT | TSEC_REDUCED;
+
 	num++;
 #endif
 #ifdef CONFIG_TSEC3
 	SET_STD_TSEC_INFO(tsec_info[num], 3);
+
+	/* kkk */
+	tsec_info[num].interface = PHY_INTERFACE_MODE_RGMII;
+	tsec_info[num].phyaddr = 0;
+	tsec_info[num].flags |= TSEC_GIGABIT | TSEC_REDUCED;
+
 	num++;
 #endif
 
