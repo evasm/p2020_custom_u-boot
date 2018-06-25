@@ -1,0 +1,333 @@
+; Example script for programming of S8 P2020 board's flash.
+;
+; $Author: issong@unimax.co.kr $
+; $Date  : 2014-11-24 $
+; $Rev   : 0001 $
+;
+
+
+;################################################################################
+; Initialize P2020 Processor
+;################################################################################
+
+; Reset this system
+SYStem.RESet
+
+; Turn off display updates during init
+SCREEN.OFF
+
+; Select processor & system UP
+SYStem.CPU P2020
+SYStem.O PERSTOP OFF
+SYStem.UP
+
+; MMU TLB setup
+; MMU.Set TLB1 <idx> <mas1>     <mas2>     <mas3>     <mas7>
+MMU.Set   TLB1  0. 0x80000900 0xF8000008 0xF8000015 0x00000000
+MMU.Set   TLB1  1. 0x80000a00 0x00000000 0x00000015 0x00000000
+MMU.Set   TLB1  2. 0x80000a00 0x40000000 0x40000015 0x00000000
+MMU.Set   TLB1  3. 0x80000500 0xF0000008 0xF0000015 0x00000000
+MMU.Set   TLB1  4. 0x80000800 0x80000008 0x80000015 0x00000000
+
+; Set base address for on-chip peripherials to 0x000F0000
+if SIMULATOR()
+  SYStem.Option.BASE 0xFE700000
+  
+Data.Set ANC:iobase()+0x00000 %long %BE 0x000F0000
+
+; Enable L2SRAM:
+;Data.Set ANC:iobase()+0x00020000 %Long 0xE0010000
+;Data.Set ANC:iobase()+0x00020100 %Long 0x10000000
+  
+; Initialize L2SRAM
+;Data.Set 0x10000000--0x1001FFFF %quad 0xAA55AA55AA55AA55
+
+
+; Local access windows
+Data.Set ANC:iobase()+0x00C10 %Long %BE 0x00000000
+Data.Set ANC:iobase()+0x00C08 %long %BE 0x000F8000 ;LAWBAR0	Flash, 0xF8000000
+Data.Set ANC:iobase()+0x00C10 %long %BE 0x8040001A ;LAWAR0	eLBC, 128MB
+
+Data.Set ANC:iobase()+0x00C30 %Long %BE 0x00000000
+Data.Set ANC:iobase()+0x00C28 %long %BE 0x00080000 ;LAWBAR1	DPRAM, 0x80000000
+Data.Set ANC:iobase()+0x00C30 %long %BE 0x80400015 ;LAWAR1	eLBC, 4MB
+
+Data.Set ANC:iobase()+0x00C50 %Long %BE 0x00000000 
+Data.Set ANC:iobase()+0x00C48 %long %BE 0x00081000 ;LAWBAR2	NVRAM, 0x81000000
+Data.Set ANC:iobase()+0x00C50 %long %BE 0x80400013 ;LAWAR2	eLBC, 1MB
+
+Data.Set ANC:iobase()+0x00D68 %long %BE 0x00000000 ;LAWBAR11	SDRAM, 0x00000000
+Data.Set ANC:iobase()+0x00D70 %long %BE 0x80F0001e ;LAWAR11	DDR, 2GB
+
+
+; Local  bus controller (chip selects)
+Data.Set ANC:iobase()+0x050D4 %Long %BE  0x80000004 ;LBC_LCRR	Bus clock is 50MHz
+
+Data.Set ANC:iobase()+0x05000 %long %BE  0xF8001001 ;LBC_BR0	Flash, 0xF8000000, 16-bits
+Data.Set ANC:iobase()+0x05004 %long %BE  0xF8001FF7 ;LBC_OR0	128MB
+Data.Set ANC:iobase()+0x05008 %long %BE  0x81010801 ;LBC_BR1	FPGA, 0x81010000, 8-bits
+Data.Set ANC:iobase()+0x0500C %long %BE  0xFFFF80F0 ;LBC_OR1	32KB
+Data.Set ANC:iobase()+0x05010 %long %BE  0x80001001 ;LBC_BR2	DPRAM#1, 0x80000000, 16-bits
+Data.Set ANC:iobase()+0x05014 %long %BE  0xFFFC00F0 ;LBC_OR2	256KB
+Data.Set ANC:iobase()+0x05018 %long %BE  0x80101001 ;LBC_BR3	DPRAM#2, 0x80100000, 16-bits
+Data.Set ANC:iobase()+0x0501C %long %BE  0xFFFC0FF7 ;LBC_OR3	256KB
+Data.Set ANC:iobase()+0x05020 %long %BE  0x80201001 ;LBC_BR4	DPRAM#3, 0x80200000, 16-bits
+Data.Set ANC:iobase()+0x05024 %long %BE  0xFFFC0FF7 ;LBC_OR4	256KB
+Data.Set ANC:iobase()+0x05028 %long %BE  0x81000801 ;LBC_BR5	NVRAM,  0x81000000, 8-bits
+Data.Set ANC:iobase()+0x0502C %long %BE  0xFFFF87F7 ;LBC_OR5	32KB
+Data.Set ANC:iobase()+0x05030 %long %BE  0x81021001 ;LBC_BR6	Bd-ID,  0x81000000, 16-bits
+Data.Set ANC:iobase()+0x05034 %long %BE  0xFFFF8FF7 ;LBC_OR6	32KB
+
+
+; eLBC configuration
+;Data.Set ANC:iobase()+0x050B0 %Long %BE 0x60000001
+;Data.Set ANC:iobase()+0x050BC %Long %BE 0x00000000
+;Data.Set ANC:iobase()+0x050B8 %Long %BE 0x60000001
+;Data.Set ANC:iobase()+0x050E4 %Long %BE 0x40000000
+;Data.Set ANC:iobase()+0x050E8 %Long %BE 0xFF000000
+;Data.Set ANC:iobase()+0x050E0 %Long %BE 0x0000F023
+;Data.Set ANC:iobase()+0x05090 %Long %BE 0x00000001
+;Data.Set ANC:iobase()+0x050B0 %Long %BE 0x00000001
+;Data.Set ANC:iobase()+0x050BC %Long %BE 0x00000000
+;Data.Set ANC:iobase()+0x050E4 %Long %BE 0xC3E00000
+;Data.Set ANC:iobase()+0x050E8 %Long %BE 0x90000000
+;Data.Set ANC:iobase()+0x050F4 %Long %BE 0x00000005
+;Data.Set ANC:iobase()+0x050EC %Long %BE 0x00000000
+;Data.Set ANC:iobase()+0x050F0 %Long %BE 0x00000000
+;Data.Set ANC:iobase()+0x050E0 %Long %BE 0x0000F023
+;Data.Set ANC:iobase()+0x05088 %Long %BE 0x00000000
+;Data.Set ANC:iobase()+0x05090 %Long %BE 0x00000001
+;Data.Set ANC:iobase()+0x050B0 %Long %BE 0x00000001
+;Data.Set ANC:iobase()+0x050BC %Long %BE 0x00000000
+;Data.Set ANC:iobase()+0x050E4 %Long %BE 0xC3E00000
+;Data.Set ANC:iobase()+0x050E8 %Long %BE 0x90000000
+;Data.Set ANC:iobase()+0x050F4 %Long %BE 0x00000005
+;Data.Set ANC:iobase()+0x050EC %Long %BE 0x00000000
+;Data.Set ANC:iobase()+0x050F0 %Long %BE 0x00000000
+;Data.Set ANC:iobase()+0x050E0 %Long %BE 0x0000F023
+;Data.Set ANC:iobase()+0x05088 %Long %BE 0x00000000
+;Data.Set ANC:iobase()+0x05090 %Long %BE 0x00000001
+;Data.Set ANC:iobase()+0x050B0 %Long %BE 0x00000001
+;Data.Set ANC:iobase()+0x050BC %Long %BE 0x00000000
+
+
+; DDR memory controller
+Data.Set ANC:iobase()+0x02000 %long 0x0000007F ;CS0_BNDS
+Data.Set ANC:iobase()+0x02080 %long 0x80014302 ;CS0_CONFIG
+Data.Set ANC:iobase()+0x020C0 %long 0x00000000 ;CS0_CONFIG_2
+Data.Set ANC:iobase()+0x02104 %long 0x00660804 ;TIMING_CFG_0
+Data.Set ANC:iobase()+0x02108 %long 0xBCB5C644 ;TIMING_CFG_1
+Data.Set ANC:iobase()+0x0210C %long 0x0FA888D4 ;TIMING_CFG_2
+Data.Set ANC:iobase()+0x02100 %long 0x010B1000 ;TIMING_CFG_3
+Data.Set ANC:iobase()+0x02114 %long 0x24401010 ;DDR_SDRAM_CFG2
+Data.Set ANC:iobase()+0x02118 %long 0x00421272 ;DDR_SDRAM_MODE
+Data.Set ANC:iobase()+0x0211C %long 0x04000000 ;DDR_SDRAM_MODE2
+Data.Set ANC:iobase()+0x02120 %long 0x00000000 ;DDR_SDRAM_MD_CNTL
+Data.Set ANC:iobase()+0x02124 %long 0x0A280100 ;DDR_SDRAM_INTERVAL
+Data.Set ANC:iobase()+0x02128 %long 0xDEADBEEF ;DDR_DATA_INIT
+Data.Set ANC:iobase()+0x02130 %long 0x02800000 ;DDR_SDRAM_CLK_CNTL
+Data.Set ANC:iobase()+0x02148 %long 0x00000000 ;DDR_INIT_ADDR
+Data.Set ANC:iobase()+0x0214C %long 0x00000000 ;DDR_INIT_EXT_ADDR
+Data.Set ANC:iobase()+0x02160 %long 0x00220001 ;TIMING_CFG_4
+Data.Set ANC:iobase()+0x02164 %long 0x03402400 ;TIMING_CFG_5
+Data.Set ANC:iobase()+0x02170 %long 0x00000000 ;DDR_ZQ_CNTL
+Data.Set ANC:iobase()+0x02174 %long 0x00000000 ;DDR_WRLVL_CNTL
+Data.Set ANC:iobase()+0x02110 %long 0x47000000 ;DDR_SDRAM_CFG
+Data.Set ANC:iobase()+0x02110 %long 0xC7000000 ;DDR_SDRAM_CFG
+WAIT 1000.ms
+
+; UART
+Data.Set ANC:iobase()+0x04501 %Byte     0x00 ;UDMB1, UIER1
+Data.Set ANC:iobase()+0x04503 %Byte     0x83 ;ULCR1
+Data.Set ANC:iobase()+0x04500 %Byte     0x00 ;UDLB1
+Data.Set ANC:iobase()+0x04501 %Byte     0x00 ;UDMB1
+Data.Set ANC:iobase()+0x04503 %Byte     0x03 ;ULCR1
+Data.Set ANC:iobase()+0x04504 %Byte     0x03 ;UMCR1
+Data.Set ANC:iobase()+0x04502 %Byte     0x07 ;UIIR1, UFCR
+Data.Set ANC:iobase()+0x04503 %Byte     0x83 ;ULCR1
+Data.Set ANC:iobase()+0x04500 %Byte     0xD9 ;UDLB1
+Data.Set ANC:iobase()+0x04501 %Byte     0x00 ;UDMB1
+Data.Set ANC:iobase()+0x04503 %Byte     0x03 ;ULCR1
+
+;I2C
+Data.Set ANC:iobase()+0x03008 %Byte     0x00
+Data.Set ANC:iobase()+0x03014 %Byte     0x0C
+Data.Set ANC:iobase()+0x03004 %Byte     0x28
+Data.Set ANC:iobase()+0x0300C %Byte     0x00
+Data.Set ANC:iobase()+0x03108 %Byte     0x00
+Data.Set ANC:iobase()+0x03114 %Byte     0x0C
+Data.Set ANC:iobase()+0x03104 %Byte     0x2F
+Data.Set ANC:iobase()+0x0310C %Byte     0x00
+
+; setup interrupt vectors
+; set to SDRAM
+; IVPR = 0x00000000
+D.S SPR:63.  %LONG 0x00000000
+; IVOR0 - IVOR15
+D.S SPR:400. %LONG 0x00000000
+D.S SPR:401. %LONG 0x00000100
+D.S SPR:402. %LONG 0x00000200
+D.S SPR:403. %LONG 0x00000300
+D.S SPR:404. %LONG 0x00000400
+D.S SPR:405. %LONG 0x00000500
+D.S SPR:406. %LONG 0x00000600
+D.S SPR:407. %LONG 0x00000700
+D.S SPR:408. %LONG 0x00000800
+D.S SPR:409. %LONG 0x00000900
+D.S SPR:410. %LONG 0x00000A00
+D.S SPR:411. %LONG 0x00000B00
+D.S SPR:412. %LONG 0x00000C00
+D.S SPR:413. %LONG 0x00000D00
+D.S SPR:414. %LONG 0x00000E00
+D.S SPR:415. %LONG 0x00000F00
+; IVOR32 - IVOR35
+D.S SPR:528. %LONG 0x00001000
+D.S SPR:529. %LONG 0x00001100
+D.S SPR:530. %LONG 0x00001200
+D.S SPR:531. %LONG 0x00001300
+
+D.Assemble 0x0000 B 0x0000
+D.Assemble 0x0100 B 0x0100
+D.Assemble 0x0200 B 0x0200
+D.Assemble 0x0300 B 0x0300
+D.Assemble 0x0400 B 0x0400
+D.Assemble 0x0500 B 0x0500
+D.Assemble 0x0600 B 0x0600
+D.Assemble 0x0700 B 0x0700
+D.Assemble 0x0800 B 0x0800
+D.Assemble 0x0900 B 0x0900
+D.Assemble 0x0A00 B 0x0A00
+D.Assemble 0x0B00 B 0x0B00
+D.Assemble 0x0C00 B 0x0C00
+D.Assemble 0x0D00 B 0x0D00
+D.Assemble 0x0E00 B 0x0E00
+D.Assemble 0x0F00 B 0x0F00
+D.Assemble 0x1000 B 0x1000
+D.Assemble 0x1100 B 0x1100
+D.Assemble 0x1200 B 0x1200
+D.Assemble 0x1300 B 0x1300
+
+; Turn on display
+SCREEN.ON
+
+
+;################################################################################
+; Run FLASH programming
+;################################################################################
+
+LOCAL &flashBase &flashDriver &fileBootloader &fileVxWorks
+
+; FIXME: AM29N256.bin is NOT working
+&flashDriver="AM29N256"
+
+; FIXME: YOU MUST BE CHANGE THE FOLLOWING FILENAMES...
+&fileBootloader="D:\Work\2018\SFC\SFC_BSP_P2020\bootrom.bin"
+&fileVxWorks="C:\T32\images\vxWorks"
+
+; Set JTAG clock to 5MHz
+SYStem.BdmClock 5.MHz
+
+; Reset FLASH definition table
+FLASH.REset
+
+; declare FLASH sectors
+FLASH.Create 1. 0xF8000000--0xF82FFFFF 0x20000 &flashDriver Word 	; /INFO "VxWorks + Application"
+FLASH.Create 1. 0xF8300000--0xFFEDFFFF 0x20000 &flashDriver Word 	; /INFO "Reserved"
+FLASH.Create 1. 0xFFEE0000--0xFFEFFFFF 0x20000 &flashDriver Word 	; /INFO "Parameters of Bootloader"
+FLASH.Create 1. 0xFFF00000--0xFFFFFFFF 0x20000 &flashDriver Word	; /INFO "Bootloader"
+
+
+; Display flash definition table
+;FLASH.LIST
+
+; Define target controlled algorithm
+FLASH.TARGET 0x0 C:0x4000 0x4000 D:\Utility\T32\demo\powerpc\flash\word\&flashDriver.bin /DualPort
+
+; Create a dialog box to choosw a file name
+;LOCAL &filename
+;DIALOG.File *.bin
+;ENTRY %LINE &filename
+;IF STRING.LEN("&filename")==0
+  &filename="&fileBootloader"
+PRINT %STRING "&filename"
+
+; Create dialog box with YES and NO bottons
+LOCAL &result
+DIALOG.YESNO "Program new bootloader image into the FLASH memory?"
+ENTRY &result
+IF &result
+(
+  ; Erase bootloader sectors
+  ;FLASH.Erase   0xFFF00000--0xFFFFFFFF
+  ;WAIT 1000.ms
+  ; Reprogramming bootloader sectors
+  FLASH.ReProgram 0xFFF00000--0xFFFFFFFF /Erase
+  DATA.LOAD.BINARY &fileBootloader 0xFFF00000
+  FLASH.ReProgram OFF
+
+  ; Verifing bootloader sectors
+  DATA.LOAD.BINARY &fileBootloader 0xFFF00000 /DIFF
+  IF FOUND()
+    PRINT "[Bootloader] Verify error after FLASH programming"
+  ELSE
+    PRINT "[Bootloader] FLASH programming completed successfully"
+)
+ENDDO
+
+; Create a dialog box to choosw a file name
+;DIALOG.File *vxWorks*
+;ENTRY %LINE &filename
+;IF STRING.LEN("&filename")==0
+  &filename="&fileVxWorks"
+PRINT %STRING "&filename"
+
+; Create dialog box with YES and NO bottons
+DIALOG.YESNO "Program new vxWorks image into the FLASH memory?"
+ENTRY &result
+IF &result
+(
+  ; Erase (VxWorks + Application) sectors
+  ;FLASH.Erase   0xFF000000--0xFF2FFFFF
+  ;WAIT 1000.ms
+  ; Reprogramming (VxWorks + Application) sectors
+  FLASH.ReProgram 0xFF000000--0xFF2FFFFF /Erase
+  DATA.LOAD.BINARY &fileVxWorks 0xFF000000
+  FLASH.ReProgram OFF
+
+  ; Verifing (VxWorks + Application) sectors
+  DATA.LOAD.BINARY &fileVxWorks 0xFF000000 /DIFF
+  IF FOUND()
+    PRINT "[VxWorks] Verify error after FLASH programming"
+  ELSE
+    PRINT "[VxWorks] FLASH programming completed successfully"
+)
+
+; Restore JTAG clock to 25MHz
+SYStem.BdmClock 25.MHz
+
+
+
+ENDDO
+
+
+
+;################################################################################
+; FLASH debugging
+;################################################################################
+
+; Read/Reset (0xF0h)
+;Data.Set 0xFF000000        %W 0xF0F0
+
+; Auto Select (0x90h)
+;Data.Set 0xFF000000+0xAAAA %W 0xAAAA
+;Data.Set 0xFF000000+0x5554 %W 0x5555
+;Data.Set 0xFF000000+0xAAAA %W 0x9090
+;Data.Set 0xFF000000        %W 0xF0F0
+
+; Read CFI (0x98h)
+;Data.Set 0xFF000000+0xAA   %W 0x9898
+;Data.Set 0xFF000000        %W 0xF0F0
+
+; Erasing bootloader sectors
+;FLASH.Erase   0xFFF00000--0xFFFFFFFF
+;FLASH.Erase   0xFF000000--0xFF2FFFFF
